@@ -4,5 +4,133 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        link(rel="stylesheet", href="styles.css")
+
         title Trueman
     body
+        header.main-header
+            .logo
+                p.logo__text Barbershop Trueman
+                .logo__image: img(src="", alt="Trueman Barbershop Logo")
+
+            .menu-icon: .menu-icon__middle
+
+            nav.main-menu: ul.main-men__list
+                li: a(href="#") О нас
+                li: a(href="#") Услуги
+                li: a(href="#") Магазин
+                li: a(href="#") Мастера
+                li: a(href="#") Контакты
+
+            .contacts
+                p.contacts__phone +375 29 166 02 50
+                p.contacts__address Минск, пр. Независимости, 46 <br>район пл. Я. Коласа <br>Ежедневно с 9 до 22
+
+            .caption
+                p.caption__subtitle Барбершоп по-настоящему
+                h1.caption__title Стрижки<br>&<br>Бритьё
+                a(href="#").button Запись онлайн
+
+        section.about
+            header.about__header
+                p.about__subtitle О барбершопе
+                h2.about__title Добро пожаловать в Trueman
+
+            p.about__desctiption TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br>TRUEMAN — барбершоп по-настоящему.
+
+            a(href="#").button.button--simple
+
+            .about__deco: img(src="", alt="Barber at work")
+
+        section.section.section--services
+            header.section__header
+                h2 Мы предлагаем
+
+            .section__content
+                article.service
+                    header.service__header
+                        .service__icon: img(src="", alt="")
+                        h3.service__title Стрижка
+                        p.service__subtitle Мужская и Детская
+                        a(href="#").service__more Подробнее
+
+                    .service__cover
+                    .service__image: img(src="", alt="")
+                
+                article.service
+                    header.service__header
+                        .service__icon: img(src="", alt="")
+                        h3.service__title Бритьё
+                        p.service__subtitle Классическое и Королевское
+                        a(href="#").service__more Подробнее
+
+                    .service__cover
+                    .service__image: img(src="", alt="")
+
+                article.service
+                    header.service__header
+                        .service__icon: img(src="", alt="")
+                        h3.service__title Магазин
+                        p.service__subtitle Уход и Аксессуары
+                        a(href="#").service__more Подробнее
+
+                    .service__cover
+                    .service__image: img(src="", alt="")
+
+        section.section.section--prices
+            header.section__header
+                h2 Прейскурант
+
+            .section__content.section__content--prices
+                table.prices-table
+                    tr
+                        td Мужская стрижка
+                        td 1400
+                    tr
+                        td Стрижка под машинку (одна насадка)
+                        td 600
+                    tr
+                        td Стрижка Fade (несколько насадок)
+                        td 1000
+                    tr
+                        td Моделирование бороды
+                        td 800
+                    tr
+                        td Ремонт бороды
+                        td 600
+
+                table.prices-table
+                    caption Комплексные услуги
+                        tr
+                            td Стрижка мужская + Королевское бритьё
+                            td 2000
+                        tr
+                            td Стрижка мужская + Ремонт бороды
+                            td 1700
+                        tr
+                            td Стрижка мужская + Моделирование бороды
+                            td 2000
+
+                table.prices-table
+                    caption Спецпредложения
+                        tr
+                            td Друг + Друг
+                            td 2300
+                        tr
+                            td Отец + Сын
+                            td 2000
+
+                .price-logo
+                    p.price-logo__text Barbershop Trueman
+                    .price-logo__image: img(src="", alt="Trueman Barbershop Logo")
+
+                a(href="#").button Все услуги
+
+        section.section.section--team
+            header.section__header
+                h2 Мастера
+
+            .section__content
+                article.member
+                
