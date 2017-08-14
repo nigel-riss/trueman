@@ -7,16 +7,42 @@
     margin: 0 auto;
 
     // visual
-    background-color: $white;
+    border: 16px solid transparent;
+    border-image: url("./img/caption-border.svg") 16;
+    
+    &__content {
+        // box model
+        padding: 20px 0;
+
+        // typography
+        text-align: center;
+
+        // visual
+        background-color: $white;
+    }
 
     &__title {
+        // box model
+        margin: 0;
+        padding: 20px 0;
+
         // typography
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
     }
 
     &__subtitle {
+        // box model
+        margin: 0;
+        padding: 0;
+
         // typography
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
     }

@@ -1,4 +1,23 @@
 body {
+    // box model
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     // typography
     font-family: $mainFont;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    // box model
+    box-sizing: inherit;
+}
+
+em {
+    // typography
+    color: $red;
+    font-style: normal;
 }

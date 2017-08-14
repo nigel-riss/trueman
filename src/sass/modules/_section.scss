@@ -1,7 +1,28 @@
 .section {
     &__header {
-        h2 {
+        // box model
+        width: 250px;
+        margin: 0 auto;
 
+        // visual
+        border: 16px solid transparent;
+        border-image: url("./img/title-border.svg") 16 stretch stretch;
+        // border-image: url("./img/title-border.png") 16 stretch stretch;
+
+        h2 {
+            // box model
+            margin: 0;
+            // typography
+            color: $white;
+            font-family: $titleFont;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            line-height: 2;
+            text-align: center;
+            text-transform: uppercase;
+
+            // visual
+            background-color: $grey;
         }
     }
 
@@ -16,7 +37,8 @@
     }
 
     &--services {
-
+        // box model
+        margin-top: -30px;
     }
 
     &--prices {

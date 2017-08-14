@@ -4,11 +4,13 @@
     z-index: 1;
 
     // box model
-    width: 230px;
-    margin: 0 auto;
+    width: 160px;
+    margin: 40px auto;
+    margin-bottom: 30px;
     
     &__text {
-
+        // box model
+        display: none;
     }
 
     &__image {

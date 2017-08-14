@@ -5,6 +5,10 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600&amp;subset=cyrillic", rel="stylesheet")
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|PT+Sans&amp;subset=cyrillic" rel="stylesheet")
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|Open+Sans&amp;subset=cyrillic,cyrillic-ext,latin-ext", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext", rel="stylesheet")
         link(rel="stylesheet", href="styles.css")
 
         title Trueman
@@ -28,20 +32,22 @@ html(lang="ru")
                 li: a(href="#") Контакты
 
             .caption
-                p.caption__subtitle Барбершоп по-настоящему
-                h1.caption__title Стрижки<br>&<br>Бритьё
-                a(href="#").button Запись онлайн
+                .caption__content
+                    p.caption__subtitle Барбершоп<br>по-настоящему
+                    h1.caption__title Стрижки<br>&<br>Бритьё
+                    a(href="#").button Запись онлайн
 
             .main-header__deco: img(src="img/deco.svg", alt="")
 
         section.about
             header.about__header
                 p.about__subtitle О барбершопе
-                h2.about__title Добро пожаловать в Trueman
+                h2.about__title Добро пожаловать в&nbsp;Trueman
 
-            p.about__description TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br>TRUEMAN — барбершоп по-настоящему.
+            p.about__description TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br><br><em>TRUEMAN</em> — барбершоп по-настоящему.
 
-            a(href="#").button.button--simple Подробнее
+            .about__more
+                a(href="#").button.button--simple Подробнее
 
             .about__deco: img(src="", alt="Barber at work")
 
