@@ -1,9 +1,18 @@
 .contacts {
-    &__phone {
+    // typography
+    color: $white;
 
+    &__phone {
+        // box model
+        margin: 0;
+        padding: 0;
+        
+        // typography
+        text-align: center;
     }
 
     &__address {
-        
+        // box model
+        display: none;
     }
 }

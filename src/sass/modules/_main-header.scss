@@ -1,3 +1,26 @@
 .main-header {
-    
+    // box model
+    padding: 40px;
+    padding-top: 20px;
+
+    // positioning
+    position: relative;
+
+    // visual
+    background-color: #1a1210;
+
+    &__deco {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 80px;
+        z-index: 0;
+
+        // box model
+        width: 120px;
+
+        img {
+
+        }
+    }
 }

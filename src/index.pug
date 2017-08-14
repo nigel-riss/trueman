@@ -10,11 +10,15 @@ html(lang="ru")
         title Trueman
     body
         header.main-header
+            .menu-icon: .menu-icon__middle
+
+            .contacts
+                p.contacts__phone +375 29 166 02 50
+                p.contacts__address Минск, пр. Независимости, 46 <br>район пл. Я. Коласа <br>Ежедневно с 9 до 22
+
             .logo
                 p.logo__text Barbershop Trueman
-                .logo__image: img(src="", alt="Trueman Barbershop Logo")
-
-            .menu-icon: .menu-icon__middle
+                .logo__image: img(src="img/logo.svg", alt="Trueman Barbershop Logo")
 
             nav.main-menu: ul.main-menu__list
                 li: a(href="#") О нас
@@ -23,23 +27,21 @@ html(lang="ru")
                 li: a(href="#") Мастера
                 li: a(href="#") Контакты
 
-            .contacts
-                p.contacts__phone +375 29 166 02 50
-                p.contacts__address Минск, пр. Независимости, 46 <br>район пл. Я. Коласа <br>Ежедневно с 9 до 22
-
             .caption
                 p.caption__subtitle Барбершоп по-настоящему
                 h1.caption__title Стрижки<br>&<br>Бритьё
                 a(href="#").button Запись онлайн
+
+            .main-header__deco: img(src="img/deco.svg", alt="")
 
         section.about
             header.about__header
                 p.about__subtitle О барбершопе
                 h2.about__title Добро пожаловать в Trueman
 
-            p.about__desctiption TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br>TRUEMAN — барбершоп по-настоящему.
+            p.about__description TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br>TRUEMAN — барбершоп по-настоящему.
 
-            a(href="#").button.button--simple
+            a(href="#").button.button--simple Подробнее
 
             .about__deco: img(src="", alt="Barber at work")
 

@@ -1,18 +1,24 @@
 .about {
+    // box model
+    padding: 40px;
+
     &__header {
 
     }
 
     &__title {
-
+        // typography
+        text-transform: uppercase;
     }
 
     &__subtitle {
-
+        // typography
+        text-transform: uppercase;
     }
 
     &__description {
-
+        // typography
+        line-height: 1.5;
     }
 
     &__deco {

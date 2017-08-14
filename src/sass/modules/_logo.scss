@@ -1,4 +1,11 @@
 .logo {
+    // positioning
+    position: relative;
+    z-index: 1;
+
+    // box model
+    width: 230px;
+    margin: 0 auto;
     
     &__text {
 

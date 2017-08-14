@@ -1,3 +1,52 @@
-body {
-    // background-color: red;
-}
+// wordpress
+
+// fonts
+
+// base
+@import "normalize.css";
+@import "base/vars";
+@import "base/mixins";
+@import "base/global";
+
+// modules
+//      elements
+@import "modules/button";
+@import "modules/social-icon";
+
+//      header
+@import "modules/main-header";
+@import "modules/logo";
+@import "modules/menu-icon";
+@import "modules/main-menu";
+@import "modules/contacts";
+@import "modules/caption";
+
+//      about
+@import "modules/about";
+
+//      section
+@import "modules/section";
+
+//      services
+@import "modules/service";
+
+//      prices
+@import "modules/prices-table";
+@import "modules/price-logo";
+
+//      team
+@import "modules/member";
+
+//      partners
+@import "modules/partner";
+
+//      location
+@import "modules/location";
+@import "modules/map-label";
+
+//      footer
+@import "modules/site-footer";
+@import "modules/footer-block";
+@import "modules/footer-info";
+@import "modules/social";
+@import "modules/copyrights";

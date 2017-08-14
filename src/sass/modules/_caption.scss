@@ -1,9 +1,23 @@
 .caption {
-    &__title {
+    // positioning
+    position: relative;
+    z-index: 1;
 
+    // box model
+    margin: 0 auto;
+
+    // visual
+    background-color: $white;
+
+    &__title {
+        // typography
+        text-align: center;
+        text-transform: uppercase;
     }
 
     &__subtitle {
-        
+        // typography
+        text-align: center;
+        text-transform: uppercase;
     }
 }
