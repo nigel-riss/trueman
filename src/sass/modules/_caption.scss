@@ -7,8 +7,10 @@
     margin: 0 auto;
 
     // visual
-    border: 16px solid transparent;
-    border-image: url("./img/caption-border.svg") 16;
+    // border: 16px solid transparent;
+    border: 18px solid transparent;
+    // border-image: url("./img/caption-border.svg") 16;
+    border-image: url("./img/caption-border.png") 36;
     
     &__content {
         // box model
@@ -29,6 +31,7 @@
         // typography
         font-family: $titleFont;
         font-size: 1.5rem;
+        // line-height: 1.2;
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;

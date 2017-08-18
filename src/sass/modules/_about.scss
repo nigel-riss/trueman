@@ -2,6 +2,7 @@
     // box model
     padding: 30px;
     padding-bottom: 60px;
+    padding-top: 40px;
 
     // visual
     background-image: url("./img/about-bg.jpg");
@@ -20,8 +21,9 @@
         padding: 0;
 
         // typography
-        font-size: 1.125rem;
-        font-weight: 600;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-weight: 700;
         line-height: 1.5;
         text-transform: uppercase;
     }
@@ -33,9 +35,10 @@
         padding-bottom: 10px;
 
         // typography
-        font-size: 1rem;
+        // font-family: $titleFont;
+        font-size: 0.875rem;
         font-weight: 600;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-transform: uppercase;
     }
 
