@@ -469,8 +469,8 @@ em {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  border: 16px solid transparent;
-  border-image: url("./img/caption-border.svg") 16; }
+  border: 18px solid transparent;
+  border-image: url("./img/caption-border.png") 36; }
   .caption__content {
     padding: 20px 0;
     text-align: center;
@@ -495,6 +495,7 @@ em {
 .about {
   padding: 30px;
   padding-bottom: 60px;
+  padding-top: 40px;
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat; }
@@ -503,17 +504,18 @@ em {
   .about__title {
     margin: 0;
     padding: 0;
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase; }
   .about__subtitle {
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase; }
   .about__description {
     padding-left: 10px;
@@ -530,8 +532,8 @@ em {
 .section__header {
   width: 250px;
   margin: 0 auto;
-  border: 16px solid transparent;
-  border-image: url("./img/title-border.svg") 16 stretch stretch; }
+  border: 18px solid transparent;
+  border-image: url("./img/title-border.png") 36 stretch stretch; }
   .section__header h2 {
     margin: 0;
     color: #ffffff;
@@ -562,8 +564,9 @@ em {
     padding: 7px 0;
     line-height: 1.5; }
     .prices-table td:nth-of-type(1) {
-      vertical-align: top;
+      vertical-align: middle;
       padding-left: 0;
+      padding-right: 20px;
       font-size: 0.875rem;
       font-weight: 700;
       text-align: left; }
@@ -572,7 +575,7 @@ em {
         font-size: 1em;
         font-weight: 400; }
     .prices-table td:nth-of-type(2) {
-      vertical-align: top;
+      vertical-align: middle;
       color: #c21f39;
       font-size: 0.875rem;
       font-weight: 700;
