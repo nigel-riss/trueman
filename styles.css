@@ -558,6 +558,53 @@ em {
 .section--services {
   margin-top: -30px; }
 
+.service {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 40px 0;
+  overflow: hidden; }
+  .service__header {
+    position: relative;
+    z-index: 3;
+    text-align: center; }
+  .service__icon {
+    width: 50px;
+    margin: 0 auto; }
+    .service__icon img {
+      width: 100%; }
+  .service__title {
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .service__subtitle {
+    color: #c5c5c5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .service__more {
+    display: inline-block; }
+  .service__cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border: 18px solid transparent;
+    border-image: url("./img/white-inv-border.png") 36; }
+  .service__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+    .service__image img {
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%; }
+
 .prices-table {
   width: 100%; }
   .prices-table td {
