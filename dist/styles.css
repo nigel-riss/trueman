@@ -493,7 +493,7 @@ em {
     text-transform: uppercase; }
 
 .about {
-  padding: 40px;
+  padding: 30px;
   padding-bottom: 60px;
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
@@ -543,5 +543,55 @@ em {
     text-transform: uppercase;
     background-color: #2b2a29; }
 
+.section__content {
+  padding: 30px; }
+  .section__content--prices {
+    padding-bottom: 100px;
+    margin-bottom: -30px;
+    text-align: center;
+    background-image: url("./img/prices-bg.jpg");
+    background-position: left bottom;
+    background-repeat: no-repeat; }
+
 .section--services {
   margin-top: -30px; }
+
+.prices-table {
+  width: 100%; }
+  .prices-table td {
+    padding: 7px 0;
+    line-height: 1.5; }
+    .prices-table td:nth-of-type(1) {
+      vertical-align: top;
+      padding-left: 0;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-align: left; }
+      .prices-table td:nth-of-type(1) small {
+        color: #2b2a29;
+        font-size: 1em;
+        font-weight: 400; }
+    .prices-table td:nth-of-type(2) {
+      vertical-align: top;
+      color: #c21f39;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-align: right; }
+  .prices-table caption {
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-top: 25px;
+    color: #005392;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase; }
+
+.price-logo__text {
+  display: none; }
+
+.price-logo__image {
+  width: 170px;
+  margin: 0 auto;
+  padding: 50px 0; }
