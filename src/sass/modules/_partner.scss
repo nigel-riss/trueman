@@ -1,5 +1,16 @@
 .partner {
+    // box model
+    display: inline-block;
+    vertical-align: middle;
+    height: 90px;
+    margin: 15px;
+    // border: 1px solid red;
+
+    // visual
+    opacity: 0.27;
+
     img {
-        
+        // box model
+        height: 100%;
     }
 }
