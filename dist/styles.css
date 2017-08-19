@@ -393,6 +393,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #202020;
+  color: #2b2a29;
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
@@ -406,21 +408,34 @@ em {
   font-style: normal; }
 
 .button {
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #2b2a29;
-  border: 3px double #ffffff; }
+  background-color: #2b2a29; }
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    left: -3px;
+    top: -3px;
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    border: 1px solid #2b2a29;
+    border: 2px solid #2b2a29; }
   .button--simple {
     padding: 20px 50px;
     color: #2b2a29;
     background-color: transparent;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid #2b2a29; }
+    background-color: rgba(255, 255, 255, 0.4); }
 
 .main-header {
   padding: 40px;
@@ -518,11 +533,9 @@ em {
     letter-spacing: 1px;
     text-transform: uppercase; }
   .about__description {
-    padding-left: 10px;
     color: #676767;
     font-size: 1rem;
-    line-height: 1.5;
-    border-left: 4px double #c21f39; }
+    line-height: 1.5; }
   .about__more {
     padding: 20px 0;
     text-align: center; }
@@ -554,6 +567,10 @@ em {
     background-image: url("./img/prices-bg.jpg");
     background-position: left bottom;
     background-repeat: no-repeat; }
+  .section__content--team {
+    padding: 30px 15px;
+    font-size: 0;
+    text-align: center; }
   .section__content--partners {
     text-align: center; }
 
@@ -563,8 +580,8 @@ em {
 .service {
   position: relative;
   margin-bottom: 30px;
-  padding-top: 60px;
-  padding-bottom: 35px;
+  padding-top: 55px;
+  padding-bottom: 40px;
   overflow: hidden; }
   .service__header {
     position: relative;
@@ -583,7 +600,9 @@ em {
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase; }
   .service__subtitle {
     margin: 0;
@@ -593,12 +612,14 @@ em {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
     text-transform: uppercase; }
   .service__more {
     display: inline-block;
     color: #ffffff;
     font-size: 0.875rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
     text-decoration: none;
     text-transform: uppercase; }
   .service__cover {
@@ -663,11 +684,78 @@ em {
   margin: 0 auto;
   padding: 50px 0; }
 
+.member {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 230px;
+  height: 60vw;
+  width: calc(50% - 8px);
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .member:nth-of-type(2n + 1) {
+    margin-right: 15px; }
+  .member__header {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    z-index: 3; }
+  .member__position {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase; }
+  .member__name {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase; }
+  .member__cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 42, 41, 0.35);
+    border: 18px solid transparent;
+    border-image: url("./img/white-inv-border.png") 36; }
+    .member__cover--join {
+      background-color: transparent;
+      border-image: url("./img/light-grey-border.png") 36; }
+  .member__photo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    transform: translateX(-50%);
+    height: 100%; }
+    .member__photo img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%; }
+  .member__title {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    color: #818181;
+    font-size: 0.8rem;
+    font-weight: 70;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase; }
+
 .partner {
   display: inline-block;
   vertical-align: middle;
-  height: 90px;
-  margin: 15px;
+  height: 80px;
+  margin: 15px 10px;
   opacity: 0.27; }
   .partner img {
     height: 100%; }

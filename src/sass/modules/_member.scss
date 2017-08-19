@@ -1,18 +1,99 @@
 .member {
-    &__header {
+    // positioning
+    position: relative;
 
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    height: 230px;
+    height: 60vw;
+    width: calc(50% - 8px);
+    margin-bottom: 20px;
+
+    // visual
+    overflow: hidden;
+
+    &:nth-of-type(2n + 1) {
+        // box model
+        margin-right: 15px;
     }
 
+    &__header {
+        // positioning
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        z-index: 3;
+    }
+    
     &__position {
-
+        // box model
+        margin: 0;
+        padding: 0;
+        
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
     }
 
     &__name {
+        // box model
+        margin: 0;
+        padding: 0;
+        
+        // typography
+        color: $white;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+    }
 
+    &__cover {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+
+        // box model
+        height: 100%;
+        width: 100%;
+
+        // visual
+        background-color: rgba($grey, 0.35);
+        border: 18px solid transparent;
+        border-image: url("./img/white-inv-border.png") 36;
+        
+        &--join {
+            // visual
+            background-color: transparent;
+            border-image: url("./img/light-grey-border.png") 36;
+        }
     }
 
     &__photo {
+        // positioning
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: 1;
+        transform: translateX(-50%);
 
+        // box model
+        height: 100%;
+
+        img {
+            // box model
+            height: 100%;
+
+            // visual
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
     }
 
     &--join {
@@ -20,6 +101,17 @@
     }
 
     &__title {
-        
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+
+        // typography
+        color: #818181;
+        font-size: 0.8rem;
+        font-weight: 70;
+        line-height: 1.2;
+        text-align: left;
+        text-transform: uppercase;
     }
 }

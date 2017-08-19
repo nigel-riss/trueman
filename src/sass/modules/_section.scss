@@ -44,6 +44,15 @@
             background-repeat: no-repeat;
         }
 
+        &--team {
+            // box model
+            padding: 30px 15px;
+            
+            // typography
+            font-size: 0;
+            text-align: center;
+        }
+
         &--partners {
             // typography
             text-align: center;
