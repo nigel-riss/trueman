@@ -452,6 +452,13 @@ em {
   padding-bottom: 60px;
   position: relative;
   background-color: #1a1210; }
+  @media (min-width: 700px) {
+    .main-header {
+      padding-bottom: 40px;
+      background-image: url("./img/header-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; } }
   .main-header__deco {
     position: absolute;
     left: 0;
@@ -464,6 +471,10 @@ em {
   z-index: 1;
   width: 160px;
   margin: 30px auto; }
+  @media (min-width: 700px) {
+    .logo {
+      margin: 0;
+      margin-bottom: 30px; } }
   .logo__text {
     display: none; }
   .logo__image {
@@ -525,6 +536,11 @@ em {
 
 .contacts {
   color: #ffffff; }
+  @media (min-width: 700px) {
+    .contacts {
+      position: absolute;
+      top: 20px;
+      right: 60px; } }
   .contacts__phone {
     margin: 0;
     margin-left: -0.25em;
@@ -540,6 +556,9 @@ em {
       text-decoration: none; }
   .contacts__address {
     display: none; }
+    @media (min-width: 700px) {
+      .contacts__address {
+        display: block; } }
 
 .caption {
   position: relative;
@@ -547,6 +566,10 @@ em {
   margin: 0 auto;
   border: 18px solid transparent;
   border-image: url("./img/caption-border.png") 36; }
+  @media (min-width: 700px) {
+    .caption {
+      width: 320px;
+      margin: 0; } }
   .caption__content {
     padding: 20px 0;
     text-align: center;
@@ -621,6 +644,13 @@ em {
 
 .section__content {
   padding: 30px; }
+  .section__content--services {
+    font-size: 0;
+    text-align: center; }
+    @media (min-width: 700px) {
+      .section__content--services {
+        display: flex;
+        justify-content: space-between; } }
   .section__content--prices {
     padding-bottom: 100px;
     margin-bottom: -30px;
@@ -640,10 +670,17 @@ em {
 
 .service {
   position: relative;
+  width: 100%;
   margin-bottom: 30px;
   padding-top: 55px;
   padding-bottom: 40px;
   overflow: hidden; }
+  @media (min-width: 700px) {
+    .service {
+      display: inline-block;
+      vertical-align: top;
+      width: 32%;
+      height: 40vw; } }
   .service__header {
     position: relative;
     z-index: 3;
@@ -697,7 +734,8 @@ em {
     left: 0;
     top: 0;
     z-index: 1;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
     .service__image img {
       width: 100%;
       height: 100%;
