@@ -1,5 +1,11 @@
 .copyrights {
     p {
-        
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        color: $white;
+        font-size: 0.75rem;
     }
 }

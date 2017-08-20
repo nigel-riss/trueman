@@ -1,0 +1,22 @@
+.footer-logo {
+    // positioning
+    position: absolute;
+    right: 30px;
+    // top: 30px;
+    bottom: 30px;
+
+    &__text {
+        // box model
+        display: none;
+    }
+
+    &__image {
+        // box model
+        width: 100px;
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
+}

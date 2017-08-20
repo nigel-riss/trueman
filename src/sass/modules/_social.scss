@@ -1,9 +1,23 @@
 .social {
-    &__title {
+    // box model
+    padding-bottom: 50px;
 
+    &__title {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
     }
 
     &__content {
-        
+        // typography
+        font-size: 0;
     }
 }

@@ -1,9 +1,30 @@
 .footer-info {
-    &__title {
+    // box model
+    padding-bottom: 40px;
 
+    &__title {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
     }
 
     &__text {
-        
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        color: $white;
+        font-family: $mainFont;
+        font-size: 0.875rem;
+        line-height: 1.5;
     }
 }
