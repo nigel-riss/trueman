@@ -1,27 +1,93 @@
 .menu-icon {
     // positioning
-    position: absolute;
-    left: 20px;
-    top: 20px;
+    position: fixed;
+    right: 15px;
+    // left: 25px;
+    top: 25px;
+    z-index: 5;
 
     // box model
-    height: 25px;
-    width: 25px;
-
-    // visual
-    // sdfa
-    background-color: $white;
-    border: 1px solid red;
+    height: 21px;
+    width: 28px;
 
     &::before {
+        content: "";
 
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        transform-origin: 0 50%;
+
+        // box model
+        display: block;
+        height: 3px;
+        width: 28px;
+
+        // visual
+        background-color: $white;
+        transition: all 0.3s ease-out;
     }
 
     &__middle {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 9px;
 
+        // box model
+        display: block;
+        height: 3px;
+        width: 28px;
+
+        // visual
+        background-color: $white;
+        transition: all 0.3s ease-out;
     }
 
-    &__after {
-        
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform-origin: 0 50%;
+
+        // box model
+        display: block;
+        height: 3px;
+        width: 28px;
+
+        // visual
+        background-color: $white;
+        transition: all 0.3s ease-out;
+    }
+
+    &--close-x {
+        &::before {
+            // positioning
+            bottom: -1px;
+            transform: rotate(-45deg);
+
+            // visual
+            background-color: $red;
+        }
+
+        .menu-icon__middle {
+            // visual
+            opacity: 0;
+        }
+
+        &::after {
+            // positioning
+            top: -1px;
+            transform: rotate(45deg);
+
+            // visual
+            background-color: $red;
+        }
     }
 }

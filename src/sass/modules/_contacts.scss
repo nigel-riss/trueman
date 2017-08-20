@@ -5,10 +5,22 @@
     &__phone {
         // box model
         margin: 0;
+        margin-left: -0.25em;
         padding: 0;
-        
+        padding-top: 3px;
+
         // typography
         text-align: center;
+        
+        a {
+            // typography
+            color: $white;
+            font-family: $titleFont;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+        }
     }
 
     &__address {

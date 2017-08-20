@@ -5,8 +5,8 @@
 
     // box model
     width: 160px;
-    margin: 40px auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
+    // margin-bottom: 30px;
     
     &__text {
         // box model
@@ -14,13 +14,12 @@
     }
 
     &__image {
+        // box model
+        width: 100%;
 
         img {
-
+            // box model
+            width: 100%;
         }
-    }
-
-    &--footer {
-        
     }
 }

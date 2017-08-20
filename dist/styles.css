@@ -463,19 +463,62 @@ em {
   position: relative;
   z-index: 1;
   width: 160px;
-  margin: 40px auto;
-  margin-bottom: 30px; }
+  margin: 30px auto; }
   .logo__text {
     display: none; }
+  .logo__image {
+    width: 100%; }
+    .logo__image img {
+      width: 100%; }
 
 .menu-icon {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  height: 25px;
-  width: 25px;
-  background-color: #ffffff;
-  border: 1px solid red; }
+  position: fixed;
+  right: 15px;
+  top: 25px;
+  z-index: 5;
+  height: 21px;
+  width: 28px; }
+  .menu-icon::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 50%;
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-out; }
+  .menu-icon__middle {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-out; }
+  .menu-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 0 50%;
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-out; }
+  .menu-icon--close-x::before {
+    bottom: -1px;
+    transform: rotate(-45deg);
+    background-color: #c21f39; }
+  .menu-icon--close-x .menu-icon__middle {
+    opacity: 0; }
+  .menu-icon--close-x::after {
+    top: -1px;
+    transform: rotate(45deg);
+    background-color: #c21f39; }
 
 .main-menu {
   display: none; }
@@ -484,8 +527,17 @@ em {
   color: #ffffff; }
   .contacts__phone {
     margin: 0;
+    margin-left: -0.25em;
     padding: 0;
+    padding-top: 3px;
     text-align: center; }
+    .contacts__phone a {
+      color: #ffffff;
+      font-family: "Lora", serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none; }
   .contacts__address {
     display: none; }
 
