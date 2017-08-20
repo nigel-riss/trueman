@@ -6,7 +6,12 @@
     // box model
     width: 160px;
     margin: 30px auto;
-    // margin-bottom: 30px;
+
+    @include atTabletsPortrait {
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+    }
     
     &__text {
         // box model

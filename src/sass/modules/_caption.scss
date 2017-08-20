@@ -7,10 +7,14 @@
     margin: 0 auto;
 
     // visual
-    // border: 16px solid transparent;
     border: 18px solid transparent;
-    // border-image: url("./img/caption-border.svg") 16;
     border-image: url("./img/caption-border.png") 36;
+
+    @include atTabletsPortrait {
+        // box model
+        width: 320px;
+        margin: 0;
+    }
     
     &__content {
         // box model

@@ -29,6 +29,18 @@
     &__content {
         // box model
         padding: 30px;
+
+        &--services {
+            // typography
+            font-size: 0;
+            text-align: center;
+            
+            @include atTabletsPortrait {
+                // box model
+                display: flex;
+                justify-content: space-between;
+            }
+        }
         
         &--prices {
             // box model

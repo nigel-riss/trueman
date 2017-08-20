@@ -3,12 +3,21 @@
     position: relative;
 
     // box model
+    width: 100%;
     margin-bottom: 30px;
     padding-top: 55px;
     padding-bottom: 40px;
 
     // visual
     overflow: hidden;
+
+    @include atTabletsPortrait {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 32%;
+        height: 40vw;
+    }
 
     &__header {
         // positioning
@@ -100,6 +109,7 @@
 
         // box model
         height: 100%;
+        width: 100%;
 
         img {
             // box model
