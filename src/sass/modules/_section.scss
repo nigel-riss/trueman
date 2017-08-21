@@ -1,5 +1,9 @@
 .section {
     &__header {
+        // positioning
+        position: relative;
+        z-index: 2;
+
         // box model
         width: 250px;
         margin: 0 auto;
@@ -29,6 +33,7 @@
     &__content {
         // box model
         padding: 30px;
+        padding-bottom: 80px;
 
         &--services {
             // typography

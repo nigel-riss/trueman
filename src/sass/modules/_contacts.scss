@@ -5,7 +5,8 @@
     @include atTabletsPortrait {
         // positioning
         position: absolute;
-        top: 20px;
+        // top: 20px;
+        bottom: 20px;
         right: 60px;
     }
 

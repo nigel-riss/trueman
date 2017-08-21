@@ -447,7 +447,7 @@ em {
     width: 100%; }
 
 .main-header {
-  padding: 40px;
+  padding: 30px;
   padding-top: 20px;
   padding-bottom: 60px;
   position: relative;
@@ -473,8 +473,10 @@ em {
   margin: 30px auto; }
   @media (min-width: 700px) {
     .logo {
+      width: 320px;
       margin: 0;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      padding: 0 80px; } }
   .logo__text {
     display: none; }
   .logo__image {
@@ -539,7 +541,7 @@ em {
   @media (min-width: 700px) {
     .contacts {
       position: absolute;
-      top: 20px;
+      bottom: 20px;
       right: 60px; } }
   .contacts__phone {
     margin: 0;
@@ -593,7 +595,7 @@ em {
 
 .about {
   padding: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   padding-top: 40px;
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
@@ -627,6 +629,8 @@ em {
     display: none; }
 
 .section__header {
+  position: relative;
+  z-index: 2;
   width: 250px;
   margin: 0 auto;
   border: 18px solid transparent;
@@ -643,7 +647,8 @@ em {
     background-color: #2b2a29; }
 
 .section__content {
-  padding: 30px; }
+  padding: 30px;
+  padding-bottom: 80px; }
   .section__content--services {
     font-size: 0;
     text-align: center; }
@@ -684,6 +689,7 @@ em {
   .service__header {
     position: relative;
     z-index: 3;
+    height: 100%;
     text-align: center; }
   .service__icon {
     width: 50px;
@@ -704,20 +710,26 @@ em {
     text-transform: uppercase; }
   .service__subtitle {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     padding-bottom: 30px;
     color: #c5c5c5;
     font-family: "Open Sans", sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+    line-height: 1.4;
     text-transform: uppercase; }
   .service__more {
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 100%;
     color: #ffffff;
     font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.5px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase; }
   .service__cover {
@@ -741,6 +753,24 @@ em {
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%; }
+
+@media (min-width: 700px) {
+  .prices-wrapper {
+    position: relative;
+    margin-top: -67px;
+    padding: 40px;
+    padding-top: 60px;
+    border: 18px solid transparent;
+    border-image: url("./img/grey-border.png") 36; }
+    .prices-wrapper::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 20px;
+      width: 270px;
+      background-color: #ffffff; } }
 
 .prices-table {
   width: 100%; }
@@ -858,6 +888,10 @@ em {
   opacity: 0.27; }
   .partner img {
     height: 100%; }
+
+@media (min-width: 700px) {
+  .location__map {
+    height: 500px; } }
 
 .site-footer {
   position: relative;

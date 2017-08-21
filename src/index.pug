@@ -91,49 +91,50 @@ html(lang="ru")
                 h2 Прейскурант
 
             .section__content.section__content--prices
-                table.prices-table
-                    tr
-                        td Мужская стрижка
-                        td 1400
-                    tr
-                        td Стрижка под машинку <br><small>(одна насадка)</small>
-                        td 600
-                    tr
-                        td Стрижка Fade <br><small>(несколько насадок)</small>
-                        td 1000
-                    tr
-                        td Моделирование бороды
-                        td 800
-                    tr
-                        td Ремонт бороды
-                        td 600
+                .prices-wrapper
+                    table.prices-table
+                        tr
+                            td Мужская стрижка
+                            td 1400
+                        tr
+                            td Стрижка под машинку <br><small>(одна насадка)</small>
+                            td 600
+                        tr
+                            td Стрижка Fade <br><small>(несколько насадок)</small>
+                            td 1000
+                        tr
+                            td Моделирование бороды
+                            td 800
+                        tr
+                            td Ремонт бороды
+                            td 600
 
-                table.prices-table
-                    caption Комплексные услуги
-                    tr
-                        td Стрижка мужская + Королевское бритьё
-                        td 2000
-                    tr
-                        td Стрижка мужская + Ремонт бороды
-                        td 1700
-                    tr
-                        td Стрижка мужская + Моделирование бороды
-                        td 2000
+                    table.prices-table
+                        caption Комплексные услуги
+                        tr
+                            td Стрижка мужская + Королевское бритьё
+                            td 2000
+                        tr
+                            td Стрижка мужская + Ремонт бороды
+                            td 1700
+                        tr
+                            td Стрижка мужская + Моделирование бороды
+                            td 2000
 
-                table.prices-table
-                    caption Спецпредложения
-                    tr
-                        td Друг + Друг
-                        td 2300
-                    tr
-                        td Отец + Сын
-                        td 2000
+                    table.prices-table
+                        caption Спецпредложения
+                        tr
+                            td Друг + Друг
+                            td 2300
+                        tr
+                            td Отец + Сын
+                            td 2000
 
-                .price-logo
-                    p.price-logo__text Barbershop Trueman
-                    .price-logo__image: img(src="./img/logo-black.svg", alt="Trueman Barbershop Logo")
+                    .price-logo
+                        p.price-logo__text Barbershop Trueman
+                        .price-logo__image: img(src="./img/logo-black.svg", alt="Trueman Barbershop Logo")
 
-                a(href="#").button Все услуги
+                    a(href="#").button Все услуги
 
         section.section.section--team
             header.section__header
@@ -217,3 +218,6 @@ html(lang="ru")
                 .copyrights
                     p © Барбершоп Trueman 
                     p Сделано студией Агонь
+
+        script(src="./scripts/map.js")
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")

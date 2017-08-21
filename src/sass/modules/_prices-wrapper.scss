@@ -1,0 +1,35 @@
+.prices-wrapper {
+    @include atTabletsPortrait {
+        // positioning
+        position: relative;
+        // z-index: 1;
+
+        // box model
+        margin-top: -67px;
+        padding: 40px;
+        padding-top: 60px;
+
+        // visual
+        border: 18px solid transparent;
+        border-image: url("./img/grey-border.png") 36;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            // z-index: 2;
+
+            // box model
+            // border: 1px solid red;
+            height: 20px;
+            width: 270px;
+
+            // visual
+            background-color: $white;
+        }
+    }
+}

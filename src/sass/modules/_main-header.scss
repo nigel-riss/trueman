@@ -1,6 +1,6 @@
 .main-header {
     // box model
-    padding: 40px;
+    padding: 30px;
     padding-top: 20px;
     padding-bottom: 60px;
 
@@ -13,10 +13,11 @@
     @include atTabletsPortrait {
         // box model
         padding-bottom: 40px;
-        
+
         // visual
         background-image: url("./img/header-bg.jpg");
         background-repeat: no-repeat;
+        // background-position: right center;
         background-position: center center;
         background-size: cover;
     }
