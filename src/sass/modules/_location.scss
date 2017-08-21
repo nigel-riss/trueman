@@ -1,5 +1,8 @@
 .location {
     &__map {
+        // box model
+        height: 400px;
+
         @include atTabletsPortrait {
             // box model
             height: 500px;

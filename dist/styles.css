@@ -647,8 +647,7 @@ em {
     background-color: #2b2a29; }
 
 .section__content {
-  padding: 30px;
-  padding-bottom: 80px; }
+  padding: 30px; }
   .section__content--services {
     font-size: 0;
     text-align: center; }
@@ -720,10 +719,6 @@ em {
     line-height: 1.4;
     text-transform: uppercase; }
   .service__more {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
     width: 100%;
     color: #ffffff;
     font-size: 0.875rem;
@@ -732,6 +727,12 @@ em {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .service__more {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px; } }
   .service__cover {
     position: absolute;
     left: 0;
@@ -885,13 +886,15 @@ em {
   vertical-align: middle;
   height: 80px;
   margin: 15px 10px;
-  opacity: 0.27; }
+  opacity: 0.34; }
   .partner img {
     height: 100%; }
 
-@media (min-width: 700px) {
-  .location__map {
-    height: 500px; } }
+.location__map {
+  height: 400px; }
+  @media (min-width: 700px) {
+    .location__map {
+      height: 500px; } }
 
 .site-footer {
   position: relative;
