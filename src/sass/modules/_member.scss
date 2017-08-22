@@ -18,6 +18,10 @@
         margin-right: 15px;
     }
 
+    @include atTabletsPortrait {
+        
+    }
+
     &__header {
         // positioning
         position: absolute;
