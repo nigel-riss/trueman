@@ -534,7 +534,40 @@ em {
     background-color: #c21f39; }
 
 .main-menu {
-  display: none; }
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 4;
+  padding: 30px;
+  padding-top: 80px;
+  background-color: #1a1210;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  visibility: hidden; }
+  .main-menu--shown {
+    opacity: 0.99;
+    visibility: visible; }
+  .main-menu__list {
+    margin: 0;
+    padding: 20px 0;
+    border: 18px solid transparent;
+    border-image: url("./img/white-border.png") 36;
+    list-style: none; }
+    .main-menu__list li {
+      margin: 0;
+      padding: 0; }
+    .main-menu__list a {
+      display: block;
+      padding: 10px 0;
+      color: #ffffff;
+      font-family: "Lora", serif;
+      font-size: 1.25rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .contacts {
   color: #ffffff; }

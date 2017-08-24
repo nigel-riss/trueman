@@ -24,7 +24,7 @@ html(lang="ru")
                 p.logo__text Barbershop Trueman
                 .logo__image: img(src="img/logo.svg", alt="Trueman Barbershop Logo")
 
-            nav.main-menu: ul.main-menu__list
+            nav.main-menu.main-menu--shown: ul.main-menu__list
                 li: a(href="#") О нас
                 li: a(href="#") Услуги
                 li: a(href="#") Магазин
@@ -219,5 +219,6 @@ html(lang="ru")
                     p © Барбершоп Trueman 
                     p Сделано студией Агонь
 
-        script(src="./scripts/map.js")
+        script(src="./map.js")
+        script(src="./app.js")
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")
