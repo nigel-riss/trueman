@@ -32,4 +32,8 @@
             background-color: $white;
         }
     }
+
+    @include atTabletsLandscape {
+        margin-top: -77px;
+    }
 }

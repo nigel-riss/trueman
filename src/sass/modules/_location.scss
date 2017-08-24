@@ -1,4 +1,7 @@
 .location {
+    // positioning
+    position: relative;
+    
     &__map {
         // box model
         height: 400px;

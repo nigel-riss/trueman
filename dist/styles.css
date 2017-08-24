@@ -459,6 +459,24 @@ em {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover; } }
+  @media (min-width: 900px) {
+    .main-header {
+      margin: 40px;
+      padding: 40px;
+      background-image: url("./img/header-bg-l.jpg"); } }
+  .main-header__border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 18px solid transparent;
+    border-image: url("./img/white-inv-border.png") 36; }
+    @media (min-width: 900px) {
+      .main-header__border {
+        display: block; } }
   .main-header__deco {
     position: absolute;
     left: 0;
@@ -491,6 +509,10 @@ em {
   z-index: 5;
   height: 21px;
   width: 28px; }
+  @media (min-width: 900px) {
+    .menu-icon {
+      right: 15px;
+      top: 15px; } }
   .menu-icon::before {
     content: "";
     position: absolute;
@@ -502,6 +524,9 @@ em {
     width: 28px;
     background-color: #ffffff;
     transition: all 0.3s ease-out; }
+    @media (min-width: 900px) {
+      .menu-icon::before {
+        background-color: #2b2a29; } }
   .menu-icon__middle {
     position: absolute;
     left: 0;
@@ -511,6 +536,9 @@ em {
     width: 28px;
     background-color: #ffffff;
     transition: all 0.3s ease-out; }
+    @media (min-width: 900px) {
+      .menu-icon__middle {
+        background-color: #2b2a29; } }
   .menu-icon::after {
     content: "";
     position: absolute;
@@ -522,6 +550,9 @@ em {
     width: 28px;
     background-color: #ffffff;
     transition: all 0.3s ease-out; }
+    @media (min-width: 900px) {
+      .menu-icon::after {
+        background-color: #2b2a29; } }
   .menu-icon--close-x::before {
     bottom: -1px;
     transform: rotate(-45deg);
@@ -537,19 +568,24 @@ em {
   position: absolute;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -100%;
   top: 0;
   z-index: 4;
+  width: 100%;
   padding: 30px;
-  padding-top: 80px;
   background-color: #1a1210;
-  opacity: 0;
   transition: all 0.3s ease-out;
   visibility: hidden; }
+  @media (min-width: 700px) {
+    .main-menu {
+      width: 400px; } }
   .main-menu--shown {
+    left: 0;
     opacity: 0.99;
     visibility: visible; }
+  .main-menu__logo {
+    width: 120px;
+    margin: 30px auto; }
   .main-menu__list {
     margin: 0;
     padding: 20px 0;
@@ -633,6 +669,12 @@ em {
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat; }
+  @media (min-width: 900px) {
+    .about {
+      padding: 40px;
+      padding-bottom: 80px;
+      background-image: url("./img/about-bg-l.jpg");
+      background-size: cover; } }
   .about__header {
     margin-bottom: 20px; }
   .about__title {
@@ -655,6 +697,9 @@ em {
     color: #676767;
     font-size: 1rem;
     line-height: 1.5; }
+    @media (min-width: 900px) {
+      .about__description {
+        width: 400px; } }
   .about__more {
     padding: 20px 0;
     text-align: center; }
@@ -681,6 +726,9 @@ em {
 
 .section__content {
   padding: 30px; }
+  @media (min-width: 900px) {
+    .section__content {
+      padding: 40px; } }
   .section__content--services {
     font-size: 0;
     text-align: center; }
@@ -690,20 +738,29 @@ em {
         justify-content: space-between; } }
   .section__content--prices {
     padding-bottom: 100px;
+    margin: 0 auto;
     margin-bottom: -30px;
-    text-align: center;
-    background-image: url("./img/prices-bg.jpg");
-    background-position: left bottom;
-    background-repeat: no-repeat; }
+    text-align: center; }
+    @media (min-width: 900px) {
+      .section__content--prices {
+        width: 800px; } }
   .section__content--team {
     padding: 30px 15px;
     font-size: 0;
     text-align: center; }
+    @media (min-width: 900px) {
+      .section__content--team {
+        padding: 40px; } }
   .section__content--partners {
     text-align: center; }
 
 .section--services {
   margin-top: -30px; }
+
+.section--prices {
+  background-image: url("./img/prices-bg.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
 
 .service {
   position: relative;
@@ -718,6 +775,10 @@ em {
       vertical-align: top;
       width: 32%;
       height: 40vw; } }
+  @media (min-width: 900px) {
+    .service {
+      height: 320px;
+      padding-top: 70px; } }
   .service__header {
     position: relative;
     z-index: 3;
@@ -805,6 +866,10 @@ em {
       height: 20px;
       width: 270px;
       background-color: #ffffff; } }
+
+@media (min-width: 900px) {
+  .prices-wrapper {
+    margin-top: -77px; } }
 
 .prices-table {
   width: 100%; }
@@ -927,14 +992,66 @@ em {
   height: 80px;
   margin: 15px 10px;
   opacity: 0.34; }
+  @media (min-width: 900px) {
+    .partner {
+      height: 100px; } }
   .partner img {
     height: 100%; }
 
-.location__map {
-  height: 400px; }
-  @media (min-width: 700px) {
-    .location__map {
-      height: 500px; } }
+.location {
+  position: relative; }
+  .location__map {
+    height: 400px; }
+    @media (min-width: 700px) {
+      .location__map {
+        height: 500px; } }
+
+.map-label {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 0 14px rgba(43, 42, 41, 0.5); }
+  .map-label__header {
+    padding: 15px;
+    padding-top: 215px; }
+  .map-label__city {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    font-family: "Lora", serif;
+    font-size: 1.25rem;
+    text-transform: uppercase; }
+  .map-label__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    font-family: "Lora", serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .map-label__address {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem; }
+  .map-label__logo {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    height: 70px; }
+    .map-label__logo img {
+      height: 100%; }
+  .map-label__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; }
+    .map-label__photo img {
+      width: 100%; }
 
 .site-footer {
   position: relative;

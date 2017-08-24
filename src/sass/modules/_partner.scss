@@ -9,6 +9,11 @@
     // visual
     opacity: 0.34;
 
+    @include atTabletsLandscape {
+        // box model
+        height: 100px;
+    }
+
     img {
         // box model
         height: 100%;

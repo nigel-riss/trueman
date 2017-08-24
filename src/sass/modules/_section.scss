@@ -35,6 +35,11 @@
         padding: 30px;
         // padding-bottom: 80px;
 
+        @include atTabletsLandscape {
+            // box model
+            padding: 40px;
+        }
+
         &--services {
             // typography
             font-size: 0;
@@ -50,15 +55,16 @@
         &--prices {
             // box model
             padding-bottom: 100px;
+            margin: 0 auto;
             margin-bottom: -30px;
 
             // typography
             text-align: center;
 
-            // visual
-            background-image: url("./img/prices-bg.jpg");
-            background-position: left bottom;
-            background-repeat: no-repeat;
+            @include atTabletsLandscape {
+                // box model
+                width: 800px;
+            }
         }
 
         &--team {
@@ -68,6 +74,10 @@
             // typography
             font-size: 0;
             text-align: center;
+
+            @include atTabletsLandscape {
+                padding: 40px;
+            }
         }
 
         &--partners {
@@ -82,7 +92,10 @@
     }
 
     &--prices {
-
+        // visual
+        background-image: url("./img/prices-bg.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
     }
 
     &--team {

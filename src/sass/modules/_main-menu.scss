@@ -3,25 +3,38 @@
     position: absolute;
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -100%;
     top: 0;
     z-index: 4;
 
     // box model
+    width: 100%;
     padding: 30px;
-    padding-top: 80px;
 
     // visual
     background-color: $dark;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.3s ease-out;
     visibility: hidden;
 
+    @include atTabletsPortrait {
+        // box model
+        width: 400px;
+    }
+
     &--shown {
+        // positioning
+        left: 0;
+
         // visual
         opacity: 0.99;
         visibility: visible;
+    }
+
+    &__logo {
+        // box model
+        width: 120px;
+        margin: 30px auto;
     }
     
     &__list {

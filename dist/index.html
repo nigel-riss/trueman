@@ -10,7 +10,8 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="menu-icon menu-icon--close-x">
+      <div class="main-header__border"></div>
+      <div class="menu-icon">
         <div class="menu-icon__middle"></div>
       </div>
       <div class="contacts">
@@ -21,7 +22,8 @@
         <p class="logo__text">Barbershop Trueman</p>
         <div class="logo__image"><img src="img/logo.svg" alt="Trueman Barbershop Logo"/></div>
       </div>
-      <nav class="main-menu main-menu--shown">
+      <nav class="main-menu">
+        <div class="main-menu__logo"><img src="img/logo.svg" alt="Trueman Barbershop Logo"/></div>
         <ul class="main-menu__list">
           <li><a href="#">О нас</a></li>
           <li><a href="#">Услуги</a></li>
@@ -195,11 +197,12 @@
     <section class="location">
       <div class="map-label">
         <header class="map-label__header">
+          <p class="map-label__city">Минск</p>
           <h2 class="map-label__title">Барбершоп Trueman</h2>
           <p class="map-label__address">пр. Независимости 46</p>
-          <div class="map-label__logo"><img src="" alt="Trueman Barbershop logo"/></div>
+          <div class="map-label__logo"><img src="./img/logo-black.svg" alt="Trueman Barbershop logo"/></div>
         </header>
-        <div class="map-label__photo"><img src="" alt="Trueman Barbershop photo"/></div>
+        <div class="map-label__photo"><img src="./img/city.jpg" alt="Trueman Barbershop photo"/></div>
       </div>
       <div class="location__map" id="map"></div>
     </section>

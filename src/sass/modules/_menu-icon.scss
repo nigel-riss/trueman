@@ -2,13 +2,18 @@
     // positioning
     position: fixed;
     right: 15px;
-    // left: 25px;
     top: 25px;
     z-index: 5;
 
     // box model
     height: 21px;
     width: 28px;
+
+    @include atTabletsLandscape {
+        // positioning
+        right: 15px;
+        top: 15px;
+    }
 
     &::before {
         content: "";
@@ -28,6 +33,11 @@
         // visual
         background-color: $white;
         transition: all 0.3s ease-out;
+
+        @include atTabletsLandscape {
+            // visual
+            background-color: $grey;
+        }
     }
 
     &__middle {
@@ -44,6 +54,11 @@
         // visual
         background-color: $white;
         transition: all 0.3s ease-out;
+
+        @include atTabletsLandscape {
+            // visual
+            background-color: $grey;
+        }
     }
 
     &::after {
@@ -64,6 +79,11 @@
         // visual
         background-color: $white;
         transition: all 0.3s ease-out;
+
+        @include atTabletsLandscape {
+            // visual
+            background-color: $grey;
+        }
     }
 
     &--close-x {
