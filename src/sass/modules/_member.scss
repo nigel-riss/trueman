@@ -19,7 +19,15 @@
     }
 
     @include atTabletsPortrait {
-        
+        // box model
+        width: calc(25% - 15px);
+        height: 30vw;
+        margin-right: 15px;
+
+        &:nth-of-type(4n) {
+            // box model
+            margin-right: 0;
+        }
     }
 
     &__header {

@@ -825,6 +825,13 @@ em {
   overflow: hidden; }
   .member:nth-of-type(2n + 1) {
     margin-right: 15px; }
+  @media (min-width: 700px) {
+    .member {
+      width: calc(25% - 15px);
+      height: 30vw;
+      margin-right: 15px; }
+      .member:nth-of-type(4n) {
+        margin-right: 0; } }
   .member__header {
     position: absolute;
     bottom: 20px;
