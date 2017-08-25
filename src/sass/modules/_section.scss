@@ -13,6 +13,11 @@
         border-image: url("./img/title-border.png") 36 stretch stretch;
         // border-image: url("./img/title-border.png") 16 stretch stretch;
 
+        @include atTabletsLandscape {
+            // box model
+            width: 300px;
+        }
+
         h2 {
             // box model
             margin: 0;
@@ -27,6 +32,11 @@
 
             // visual
             background-color: $grey;
+
+            @include atTabletsLandscape {
+                // typography
+                font-size: 1.25rem;
+            }
         }
     }
 
@@ -38,6 +48,11 @@
         @include atTabletsLandscape {
             // box model
             padding: 40px;
+        }
+
+        @include atDesktop {
+            // box model
+            padding: 60px;
         }
 
         &--services {
@@ -54,9 +69,8 @@
         
         &--prices {
             // box model
-            padding-bottom: 100px;
             margin: 0 auto;
-            margin-bottom: -30px;
+            padding-bottom: 100px;
 
             // typography
             text-align: center;
@@ -88,16 +102,28 @@
 
     &--services {
         // box model
-        margin-top: -30px;
+        margin-top: -35px;
+
+        @include atTabletsLandscape {
+            // box model
+            margin-top: -40px;
+        }
     }
 
     &--prices {
+        // box model
+        margin-bottom: -35px;
+
         // visual
         background-image: url("./img/prices-bg.jpg");
         background-position: left bottom;
         background-repeat: no-repeat;
 
         @include atTabletsLandscape {
+            // box model
+            margin-bottom: -40px;
+
+            // visual
             background-image: url("./img/prices-bg-l.jpg");
             background-size: contain;
         }

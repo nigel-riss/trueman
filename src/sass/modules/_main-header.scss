@@ -34,10 +34,9 @@
 
     @include atDesktop {
         // box model
-        width: 1120px;
+        // width: 1120px;
         height: 680px;
-        margin: 0 auto;
-        margin-top: 40px;
+        margin: 40px 60px;
         padding: 40px 60px;
 
         // visual

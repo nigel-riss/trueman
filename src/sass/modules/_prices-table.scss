@@ -23,6 +23,11 @@
             font-size: 0.875rem;
             font-weight: 700;
             text-align: left;
+
+            @include atTabletsPortrait {
+                // typography
+                font-size: 1rem;
+            }
             
             small {
                 // typography
@@ -41,6 +46,11 @@
             font-size: 0.875rem;
             font-weight: 700;
             text-align: right;
+
+            @include atTabletsPortrait {
+                // typography
+                font-size: 1rem;
+            }
         }
     }
 
@@ -48,14 +58,20 @@
         // box model
         padding-bottom: 5px;
         padding-left: 1px;
-        padding-top: 25px;
+        padding-top: 30px;
 
         // typography
         color: $blue;
-        font-size: 0.875rem;
+        font-family: $titleFont;
+        font-size: 1rem;
         font-weight: 700;
         letter-spacing: 1px;
         text-align: left;
         text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1rem;
+        }
     }
 }

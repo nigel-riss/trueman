@@ -30,10 +30,21 @@
 
             // visual
             background-color: $white;
+
+            @include atTabletsLandscape {
+                // box model
+                width: 320px;
+            }
         }
     }
 
     @include atTabletsLandscape {
-        margin-top: -77px;
+        // box model
+        margin-top: -80px;
+    }
+
+    @include atDesktop {
+        // box model
+        margin-top: -100px;
     }
 }

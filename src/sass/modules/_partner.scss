@@ -14,6 +14,12 @@
         height: 100px;
     }
 
+    @include atDesktop {
+        // box model
+        height: 120px;
+        margin: 15px 20px;
+    }
+
     img {
         // box model
         height: 100%;
