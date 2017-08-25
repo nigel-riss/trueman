@@ -96,6 +96,11 @@
         background-image: url("./img/prices-bg.jpg");
         background-position: left bottom;
         background-repeat: no-repeat;
+
+        @include atTabletsLandscape {
+            background-image: url("./img/prices-bg-l.jpg");
+            background-size: contain;
+        }
     }
 
     &--team {
