@@ -470,10 +470,8 @@ em {
       background-image: url("./img/header-bg-l.jpg"); } }
   @media (min-width: 1200px) {
     .main-header {
-      width: 1120px;
       height: 680px;
-      margin: 0 auto;
-      margin-top: 40px;
+      margin: 40px 60px;
       padding: 40px 60px;
       background-position: left top; } }
   .main-header__border {
@@ -773,14 +771,22 @@ em {
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    .about {
+      padding-top: 60px; } }
   @media (min-width: 900px) {
     .about {
-      padding: 40px;
-      padding-bottom: 80px;
+      padding-bottom: 100px;
       background-image: url("./img/about-bg-l.jpg");
       background-size: cover; } }
+  @media (min-width: 1200px) {
+    .about {
+      padding: 60px; } }
   .about__header {
     margin-bottom: 20px; }
+    @media (min-width: 1200px) {
+      .about__header {
+        margin-bottom: 20px; } }
   .about__title {
     margin: 0;
     padding: 0;
@@ -792,7 +798,7 @@ em {
   .about__subtitle {
     margin: 0;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -804,9 +810,16 @@ em {
     @media (min-width: 900px) {
       .about__description {
         width: 400px; } }
+    @media (min-width: 1200px) {
+      .about__description {
+        width: 600px;
+        font-size: 1.125rem; } }
   .about__more {
     padding: 20px 0;
     text-align: center; }
+    @media (min-width: 900px) {
+      .about__more {
+        text-align: left; } }
   .about__deco {
     display: none; }
 
@@ -817,6 +830,9 @@ em {
   margin: 0 auto;
   border: 18px solid transparent;
   border-image: url("./img/title-border.png") 36 stretch stretch; }
+  @media (min-width: 900px) {
+    .section__header {
+      width: 300px; } }
   .section__header h2 {
     margin: 0;
     color: #ffffff;
@@ -827,12 +843,18 @@ em {
     text-align: center;
     text-transform: uppercase;
     background-color: #2b2a29; }
+    @media (min-width: 900px) {
+      .section__header h2 {
+        font-size: 1.25rem; } }
 
 .section__content {
   padding: 30px; }
   @media (min-width: 900px) {
     .section__content {
       padding: 40px; } }
+  @media (min-width: 1200px) {
+    .section__content {
+      padding: 60px; } }
   .section__content--services {
     font-size: 0;
     text-align: center; }
@@ -841,9 +863,8 @@ em {
         display: flex;
         justify-content: space-between; } }
   .section__content--prices {
-    padding-bottom: 100px;
     margin: 0 auto;
-    margin-bottom: -30px;
+    padding-bottom: 100px;
     text-align: center; }
     @media (min-width: 900px) {
       .section__content--prices {
@@ -859,14 +880,19 @@ em {
     text-align: center; }
 
 .section--services {
-  margin-top: -30px; }
+  margin-top: -35px; }
+  @media (min-width: 900px) {
+    .section--services {
+      margin-top: -40px; } }
 
 .section--prices {
+  margin-bottom: -35px;
   background-image: url("./img/prices-bg.jpg");
   background-position: left bottom;
   background-repeat: no-repeat; }
   @media (min-width: 900px) {
     .section--prices {
+      margin-bottom: -40px;
       background-image: url("./img/prices-bg-l.jpg");
       background-size: contain; } }
 
@@ -974,10 +1000,17 @@ em {
       height: 20px;
       width: 270px;
       background-color: #ffffff; } }
+    @media (min-width: 700px) and (min-width: 900px) {
+      .prices-wrapper::before {
+        width: 320px; } }
 
 @media (min-width: 900px) {
   .prices-wrapper {
-    margin-top: -77px; } }
+    margin-top: -80px; } }
+
+@media (min-width: 1200px) {
+  .prices-wrapper {
+    margin-top: -100px; } }
 
 .prices-table {
   width: 100%; }
@@ -991,6 +1024,9 @@ em {
       font-size: 0.875rem;
       font-weight: 700;
       text-align: left; }
+      @media (min-width: 700px) {
+        .prices-table td:nth-of-type(1) {
+          font-size: 1rem; } }
       .prices-table td:nth-of-type(1) small {
         color: #2b2a29;
         font-size: 1em;
@@ -1001,16 +1037,23 @@ em {
       font-size: 0.875rem;
       font-weight: 700;
       text-align: right; }
+      @media (min-width: 700px) {
+        .prices-table td:nth-of-type(2) {
+          font-size: 1rem; } }
   .prices-table caption {
     padding-bottom: 5px;
     padding-left: 1px;
-    padding-top: 25px;
+    padding-top: 30px;
     color: #005392;
-    font-size: 0.875rem;
+    font-family: "Lora", serif;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .prices-table caption {
+        font-size: 1rem; } }
 
 .price-logo__text {
   display: none; }
@@ -1043,6 +1086,14 @@ em {
     bottom: 20px;
     left: 15px;
     z-index: 3; }
+    @media (min-width: 900px) {
+      .member__header {
+        bottom: 25px;
+        left: 20px; } }
+    @media (min-width: 1200px) {
+      .member__header {
+        bottom: 30px;
+        left: 25px; } }
   .member__position {
     margin: 0;
     padding: 0;
@@ -1051,6 +1102,9 @@ em {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase; }
+    @media (min-width: 900px) {
+      .member__position {
+        font-size: 1rem; } }
   .member__name {
     margin: 0;
     padding: 0;
@@ -1059,6 +1113,9 @@ em {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase; }
+    @media (min-width: 900px) {
+      .member__name {
+        font-size: 1.25rem; } }
   .member__cover {
     position: absolute;
     left: 0;
@@ -1093,6 +1150,12 @@ em {
     line-height: 1.2;
     text-align: left;
     text-transform: uppercase; }
+    @media (min-width: 900px) {
+      .member__title {
+        font-size: 0.875rem; } }
+    @media (min-width: 1200px) {
+      .member__title {
+        font-size: 1rem; } }
 
 .partner {
   display: inline-block;
@@ -1103,6 +1166,10 @@ em {
   @media (min-width: 900px) {
     .partner {
       height: 100px; } }
+  @media (min-width: 1200px) {
+    .partner {
+      height: 120px;
+      margin: 15px 20px; } }
   .partner img {
     height: 100%; }
 
