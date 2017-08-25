@@ -30,6 +30,11 @@
         }
     }
 
+    @include atDesktopLarge {
+        // box model
+        height: 400px;
+    }
+
     &__header {
         // positioning
         position: absolute;

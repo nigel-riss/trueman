@@ -35,6 +35,11 @@
                 // box model
                 width: 320px;
             }
+
+            @include atDesktop {
+                // box model
+                width: 380px;
+            }
         }
     }
 
@@ -45,6 +50,7 @@
 
     @include atDesktop {
         // box model
-        margin-top: -100px;
+        margin-top: -105px;
+        padding-top: 100px;
     }
 }

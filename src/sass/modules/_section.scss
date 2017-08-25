@@ -18,6 +18,11 @@
             width: 300px;
         }
 
+        @include atDesktop {
+            // box model
+            width: 360px;
+        }
+
         h2 {
             // box model
             margin: 0;
@@ -37,6 +42,11 @@
                 // typography
                 font-size: 1.25rem;
             }
+
+            @include atDesktop {
+                // typography
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -53,6 +63,13 @@
         @include atDesktop {
             // box model
             padding: 60px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            width: 1280px;
+            margin: 0 auto;
+            padding: 60px 0;
         }
 
         &--services {
@@ -79,6 +96,11 @@
                 // box model
                 width: 800px;
             }
+
+            @include atDesktop {
+                // box model
+                width: 900px;
+            }
         }
 
         &--team {
@@ -90,7 +112,19 @@
             text-align: center;
 
             @include atTabletsLandscape {
+                // box model
                 padding: 40px;
+            }
+
+            @include atDesktop {
+                // box model
+                padding: 60px;
+            }
+
+            @include atDesktopLarge {
+                // box model
+                width: 1280px;
+                padding: 60px 0;
             }
         }
 
@@ -107,6 +141,11 @@
         @include atTabletsLandscape {
             // box model
             margin-top: -40px;
+        }
+
+        @include atDesktop {
+            // box model
+            margin-top: -43px;
         }
     }
 

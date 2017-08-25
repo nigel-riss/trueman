@@ -19,6 +19,12 @@
         height: 120px;
         margin: 15px 20px;
     }
+    
+    @include atDesktopLarge {
+        // box model
+        height: 140px;
+        margin: 15px 30px;
+    }
 
     img {
         // box model

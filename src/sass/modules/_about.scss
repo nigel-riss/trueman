@@ -2,21 +2,18 @@
     // box model
     padding: 30px;
     padding-bottom: 80px;
-    padding-top: 40px;
+    padding-top: 60px;
 
     // visual
     background-image: url("./img/about-bg.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     // background-size: 200%;
-
-    @include atTabletsPortrait {
-        // box model
-        padding-top: 60px;
-    }
     
     @include atTabletsLandscape {
         // box model
+        padding: 40px;
+        padding-top: 60px;
         padding-bottom: 100px;
         
         // visual
@@ -35,6 +32,13 @@
 
         @include atDesktop {
             // box model
+            margin-bottom: 20px;
+        }
+        
+        @include atDesktopLarge {
+            // box model
+            width: 1280px;
+            margin: 0 auto;
             margin-bottom: 20px;
         }
     }
@@ -68,10 +72,10 @@
     }
 
     &__content {
-        @include atDesktop {
+        @include atDesktopLarge {
             // box model
-            // width: 1120px;
-            // margin: 0 60px;
+            width: 1280px;
+            margin: 0 auto;
         }
     }
 
@@ -83,7 +87,7 @@
         color: #676767;
         font-size: 1rem;
         // font-weight: 600;
-        line-height: 1.5;
+        line-height: 1.75;
 
         // visual
         // border-left: 4px double $red;

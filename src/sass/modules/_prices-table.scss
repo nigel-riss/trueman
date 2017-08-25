@@ -2,8 +2,12 @@
     // box model
     width: 100%;
 
-    tr {
+    // table
+    border-collapse: collapse;
 
+    tr {
+        // visual
+        // background-color: $lightGrey;
     }
 
     td {
@@ -24,9 +28,17 @@
             font-weight: 700;
             text-align: left;
 
+            // visual
+            border-bottom: 1px dotted rgba($lightGrey, 0.5);
+            
             @include atTabletsPortrait {
                 // typography
                 font-size: 1rem;
+            }
+            
+            @include atDesktop {
+                // typography
+                font-size: 1.125rem;
             }
             
             small {
@@ -46,10 +58,18 @@
             font-size: 0.875rem;
             font-weight: 700;
             text-align: right;
+            
+            // visual
+            border-bottom: 1px dotted rgba($lightGrey, 0.5);
 
             @include atTabletsPortrait {
                 // typography
                 font-size: 1rem;
+            }
+
+            @include atDesktop {
+                // typography
+                font-size: 1.125rem;
             }
         }
     }
@@ -72,6 +92,16 @@
         @include atTabletsPortrait {
             // typography
             font-size: 1rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1.125rem;
+        }
+
+        @include atDesktop {
+            // typography
+            font-size: 1.5rem;
         }
     }
 }
