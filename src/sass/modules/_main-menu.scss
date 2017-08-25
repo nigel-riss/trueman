@@ -1,6 +1,5 @@
 .main-menu {
     // positioning
-    position: absolute;
     position: fixed;
     bottom: 0;
     left: -100%;
@@ -22,6 +21,25 @@
         width: 400px;
     }
 
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        bottom: auto;
+        left: 260px;
+        right: auto;
+        top: 40px;
+        z-index: 4;
+
+        // box model
+        width: auto;
+        margin: 0;
+        padding: 0;
+
+        // visual
+        background-color: transparent;
+        visibility: visible;
+    }
+
     &--shown {
         // positioning
         left: 0;
@@ -35,6 +53,11 @@
         // box model
         width: 120px;
         margin: 30px auto;
+
+        @include atDesktop {
+            // box model
+            display: none;
+        }
     }
     
     &__list {
@@ -47,10 +70,25 @@
         border-image: url("./img/white-border.png") 36;
         list-style: none;
 
+        @include atDesktop {
+            // box model
+            padding: 0;
+
+            // visual
+            border: none;
+            border-image: none;
+        }
+
         li {
             // box model
             margin: 0;
             padding: 0;
+
+            @include atDesktop {
+                // box model
+                display: inline-block;
+                padding: 0 10px;
+            }
         }
 
         a {
@@ -65,6 +103,14 @@
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
+
+            @include atDesktop {
+                // box model
+                padding: 5px;
+
+                // typography
+                font-size: 1rem;
+            }
         }
     }
 }

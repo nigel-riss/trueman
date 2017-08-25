@@ -23,3 +23,10 @@ em {
     color: $red;
     font-style: normal;
 }
+
+.but-desktop {
+    @include atDesktop {
+        // box model
+        display: none;
+    }
+}

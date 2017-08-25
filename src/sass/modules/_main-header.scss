@@ -1,11 +1,11 @@
 .main-header {
+    // positioning
+    position: relative;
+
     // box model
     padding: 30px;
     padding-top: 20px;
     padding-bottom: 60px;
-
-    // positioning
-    position: relative;
 
     // visual
     background-color: $dark;
@@ -30,6 +30,18 @@
 
         // visual
         background-image: url("./img/header-bg-l.jpg");
+    }
+
+    @include atDesktop {
+        // box model
+        width: 1120px;
+        height: 680px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 40px 60px;
+
+        // visual
+        background-position: left top;
     }
     
     &__border {
@@ -63,6 +75,14 @@
 
         // box model
         width: 120px;
+
+        @include atDesktop {
+            // positioning
+            top: 40px;
+
+            // box model
+            width: 180px;
+        }
 
         img {
 

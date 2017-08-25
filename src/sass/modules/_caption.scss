@@ -15,6 +15,16 @@
         width: 320px;
         margin: 0;
     }
+
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+
+        // box model
+        width: 360px;
+    }
     
     &__content {
         // box model
@@ -39,6 +49,11 @@
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
+
+        @include atDesktop {
+            // typography
+            font-size: 2rem;
+        }
     }
 
     &__subtitle {
