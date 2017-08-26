@@ -82,9 +82,10 @@
     &__description {
         // box model
         // padding-left: 10px;
+        padding-bottom: 20px;
 
         // typography
-        color: #676767;
+        color: $grey;
         font-size: 1rem;
         // font-weight: 600;
         line-height: 1.75;
@@ -102,7 +103,7 @@
             width: 600px;
 
             // typography
-            font-size: 1.125rem;
+            // font-size: 1.125rem;
         }
     }
 

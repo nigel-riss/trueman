@@ -14,11 +14,20 @@
         margin-bottom: 30px;
         padding: 0 80px;
     }
-
+    
     @include atDesktop {
         // box model
         padding: 0;
         width: 180px;
+    }
+    
+    &--inner {
+        @include atTabletsPortrait {
+            // box model
+            width: 170px;
+            margin: 0;
+            padding: 0;
+        }
     }
     
     &__text {

@@ -7,7 +7,7 @@
         position: absolute;
         bottom: auto;
         right: 70px;
-        top: 30px;
+        top: 25px;
     }
 
     @include atTabletsLandscape {
@@ -21,6 +21,18 @@
         top: 40px;
     }
 
+    &--inner {
+        @include atTabletsPortrait {
+            // positioning
+            top: 30px;
+        }
+
+        @include atDesktopLarge {
+            // positioning
+            top: 35px;
+        }
+    }
+
     &__phone {
         // box model
         margin: 0;
@@ -31,7 +43,8 @@
         // typography
         text-align: center;
 
-        @include atTabletsLandscape {
+        // @include atTabletsLandscape {
+        @include atTabletsPortrait {
             // box model
             margin: 0;
             padding: 0;
@@ -42,7 +55,7 @@
 
         @include atDesktop {
             // typography
-            text-align: left;
+            // text-align: left;
         }
         
         a {
@@ -70,7 +83,8 @@
         // box model
         display: none;
 
-        @include atTabletsLandscape {
+        // @include atTabletsLandscape {
+        @include atTabletsPortrait {
             // box model
             display: block;
             margin: 0;
@@ -80,20 +94,32 @@
             // typography
             font-family: $titleFont;
             font-size: 0.875rem;
-            line-height: 1.3;
+            line-height: 1.5;
             text-align: right;
         }
 
         @include atDesktop {
             // typography
-            text-align: left;
+            // text-align: left;
             font-size: 0.875rem;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         @include atDesktopLarge {
             // typography
             font-size: 1rem;
         }
+    }
+
+    &__checkin {
+        // positioning
+        position: relative;
+        z-index: 5;
+
+        // box model
+        padding-top: 25px;
+
+        // typography
+        text-align: right;
     }
 }

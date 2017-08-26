@@ -55,4 +55,26 @@
         background-color: transparent;
         background-color: rgba($white, 0.4);
     }
+
+    &--white {
+        // typography
+        color: $grey;
+
+        // visual
+        background-color: $white;
+        transition: all 0.3s ease-out;
+
+        &::before {
+            // visual
+            border: 1px solid $white;
+        }
+
+        &:hover {
+            // typography
+            color: $white;
+
+            // visual
+            background-color: $grey;
+        }
+    }
 }
