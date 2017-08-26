@@ -421,7 +421,11 @@ em {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #2b2a29; }
+  background-color: #2b2a29;
+  transition: all 0.3s ease-out; }
+  .button:hover {
+    color: #2b2a29;
+    background-color: #ffffff; }
   .button::before {
     content: "";
     position: absolute;
@@ -429,11 +433,8 @@ em {
     top: -4px;
     left: -3px;
     top: -3px;
-    height: calc(100% + 8px);
-    width: calc(100% + 8px);
     height: calc(100% + 6px);
     width: calc(100% + 6px);
-    border: 1px solid #2b2a29;
     border: 2px solid #2b2a29; }
   .button--simple {
     padding: 20px 50px;
@@ -628,9 +629,9 @@ em {
     .main-menu {
       position: absolute;
       bottom: auto;
-      left: 260px;
+      left: 250px;
       right: auto;
-      top: 40px;
+      top: 35px;
       z-index: 4;
       width: auto;
       margin: 0;
@@ -671,13 +672,21 @@ em {
       color: #ffffff;
       font-family: "Lora", serif;
       font-size: 1.25rem;
+      letter-spacing: 0.5px;
       text-align: center;
       text-decoration: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: all 0.3s ease-out; }
       @media (min-width: 1200px) {
         .main-menu__list a {
           padding: 5px;
           font-size: 1rem; } }
+      @media (min-width: 1400px) {
+        .main-menu__list a {
+          padding: 7px;
+          font-size: 1.125rem; } }
+      .main-menu__list a:hover {
+        color: #c21f39; }
 
 .contacts {
   color: #ffffff; }
@@ -712,12 +721,14 @@ em {
       color: #ffffff;
       font-family: "Lora", serif;
       font-size: 1.25rem;
-      font-weight: 700;
       text-align: center;
       text-decoration: none; }
       @media (min-width: 1200px) {
         .contacts__phone a {
           font-size: 1.35rem; } }
+      @media (min-width: 1400px) {
+        .contacts__phone a {
+          font-size: 1.5rem; } }
   .contacts__address {
     display: none; }
     @media (min-width: 900px) {
@@ -735,6 +746,9 @@ em {
         text-align: left;
         font-size: 0.875rem;
         line-height: 1.4; } }
+    @media (min-width: 1400px) {
+      .contacts__address {
+        font-size: 1rem; } }
 
 .caption {
   position: relative;
@@ -757,6 +771,7 @@ em {
     text-align: center;
     background-color: #ffffff; }
   .caption__title {
+    position: relative;
     margin: 0;
     padding: 20px 0;
     font-family: "Lora", serif;
@@ -767,6 +782,20 @@ em {
     @media (min-width: 1200px) {
       .caption__title {
         font-size: 2rem; } }
+    .caption__title::before {
+      content: "";
+      position: absolute;
+      top: 57px;
+      left: 0;
+      height: 7px;
+      width: 100%;
+      background-image: url("./img/chain.svg");
+      background-repeat: no-repeat;
+      background-position: center center; }
+      @media (min-width: 1200px) {
+        .caption__title::before {
+          top: 70px;
+          height: 8px; } }
   .caption__subtitle {
     margin: 0;
     padding: 0;
@@ -960,17 +989,50 @@ em {
     .service {
       height: 320px;
       padding-top: 70px; } }
+  .service:hover .service__image {
+    opacity: 0; }
+  .service:hover .service__title {
+    color: #1a1210; }
+  .service:hover .service__subtitle {
+    color: #2b2a29; }
+  .service:hover .service__more {
+    color: #c21f39; }
+  .service:hover .service__cover {
+    border: 18px solid transparent;
+    border-image: url("./img/light-grey-border.png") 36; }
+  .service:hover .service__icon-white {
+    opacity: 0; }
+  .service:hover .service__icon-black {
+    opacity: 1; }
   .service__header {
     position: relative;
     z-index: 3;
     height: 100%;
     text-align: center; }
   .service__icon {
+    position: relative;
     width: 50px;
+    height: 50px;
     margin: 0 auto;
-    padding-bottom: 20px; }
-    .service__icon img {
-      width: 100%; }
+    margin-bottom: 20px; }
+    @media (min-width: 1200px) {
+      .service__icon {
+        width: 60px;
+        height: 60px; } }
+    .service__icon-white {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      opacity: 1;
+      transition: all 0.3s ease-out; }
+    .service__icon-black {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.3s ease-out; }
   .service__title {
     margin: 0;
     padding: 0;
@@ -981,7 +1043,8 @@ em {
     font-size: 1.25rem;
     letter-spacing: 1px;
     letter-spacing: 0.5px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s ease-out; }
   .service__subtitle {
     margin: 0;
     padding: 0 10px;
@@ -992,7 +1055,8 @@ em {
     font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 1.4;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s ease-out; }
   .service__more {
     width: 100%;
     color: #ffffff;
@@ -1001,7 +1065,8 @@ em {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s ease-out; }
     @media (min-width: 700px) {
       .service__more {
         position: absolute;
