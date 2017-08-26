@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600&amp;subset=cyrillic", rel="stylesheet")
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|PT+Sans&amp;subset=cyrillic" rel="stylesheet")
+        //- link(href="https://fonts.googleapis.com/css?family=Lora|Open+Sans&amp;subset=cyrillic,cyrillic-ext,latin-ext", rel="stylesheet")
+        //- link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic,cyrillic-ext", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext", rel="stylesheet")
+        link(rel="stylesheet", href="styles.css")
+
+        title Trueman - О барбершопе
+    body
+        header.inner-header
+            .inner-header__border
+
+            .menu-icon: .menu-icon__middle
+
+            .contacts
+                p.contacts__phone: a(href="tel:+375296396000") +375 296 396 000
+                p.contacts__address Минск, пр. Независимости, 46<br>район пл. Я. Коласа<br>Ежедневно с 9 до 22
+
+            .logo
+                p.logo__text Barbershop Trueman
+                .logo__image: img(src="img/logo.svg", alt="Trueman Barbershop Logo")
+
+            nav.main-menu
+                .main-menu__logo: img(src="img/logo.svg", alt="Trueman Barbershop Logo")
+                ul.main-menu__list
+                    li: a(href="#") О нас
+                    li: a(href="#") Услуги
+                    li: a(href="#") Магазин
+                    li: a(href="#") Мастера
+                    li: a(href="#") Контакты
+
+        section.about.about--inner
+            header.about__header
+                p.about__subtitle О барбершопе
+                h1.about__title Добро пожаловать в&nbsp;Trueman
+
+            .about__content
+                p.about__description TRUEMAN - барбершоп для истинных мужчин. Вдохновленные британской историей и традициями, мы создали место, где чтут классическую старую школу мужских стрижек и брадобрейства. Место, где любой мужчина, от ребенка до солидного Трумана, найдет то, что ищет. Дружескую атмосферу, когда тебя встречают как старого приятеля. Возможность поговорить по душам за чашкой хорошего чая или чего покрепче. И, конечно, аккуратную стрижку, блестящее оформление бороды или ритуал королевского бритья.
+
+                p.about__description Кстати, это то, в чем мы действительно разбираемся. У нас есть опыт, благодаря которому мы уверенно подскажем, какой стиль прически и средства подходят именно вам. В вашем распоряжении целый арсенал отборной мужской косметики, которая поможет «держать марку» между визитами в TRUEMAN. Дружеский совет: найдите своего барбера и доверьтесь ему. Он не подведет, обещаем. 
+
+                p.about__description В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность. И все что мы делаем - отражаем ее наилучшим образом.   
+                p.about__description <em>TRUEMAN</em> — барбершоп по&#8209;настоящему.
+
+                .about__more
+                    a(href="#").button Запись онлайн
+
+                .about__deco: img(src="", alt="Barber at work")
+
+            .about__partners
+                .partner: img(src="./img/partners/oldboy.png", alt="Oldboy logo")
+                .partner: img(src="./img/partners/yacht.png", alt="Yacht Event logo")
+                .partner: img(src="./img/partners/american-crew.png", alt="American Crew logo")
+                .partner: img(src="./img/partners/truefitt-and-hill.png", alt="Truefitt & Hill logo")
+                .partner: img(src="./img/partners/proraso.png", alt="Proraso logo")
+
+        footer.site-footer
+            .footer-logo
+                p.footer-logo__text Barbershop Trueman
+                .footer-logo__image: img(src="./img/logo.svg", alt="Trueman Barbershop Logo")
+
+            .footer-block
+                .footer-info
+                    h3.footer-info__title Контакты
+                    p.footer-info__text г. Минск, пр. Независимости, 46<br>ООО  «Труман групп»
+                    
+                .footer-info
+                    h3.footer-info__title Часы работы
+                    p.footer-info__text Ежедневно с 9 до 22
+                    
+
+            .footer-block.footer-block--right
+                .social
+                    h3.social__title Мы в соцсетях
+                    .social__content
+                        a(href="#").social-icon: img(src="./img/social/instagram.svg", alt="Instagram") 
+                        a(href="#").social-icon: img(src="./img/social/facebook.svg", alt="Facebook") 
+                        a(href="#").social-icon: img(src="./img/social/vk.svg", alt="VKontakte") 
+
+                .copyrights
+                    p © Барбершоп Trueman 
+                    p Сделано студией Агонь
+
+        script(src="./app.js")

@@ -453,7 +453,6 @@ em {
 .main-header {
   position: relative;
   padding: 30px;
-  padding-top: 20px;
   padding-bottom: 60px;
   background-color: #1a1210; }
   @media (min-width: 700px) {
@@ -502,6 +501,14 @@ em {
       .main-header__deco {
         top: 40px;
         width: 180px; } }
+
+.inner-header {
+  position: relative;
+  padding: 30px;
+  background-color: #1a1210;
+  background-image: url("./img/about-header-bg.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .logo {
   position: relative;
@@ -835,6 +842,9 @@ em {
         text-align: left; } }
   .about__deco {
     display: none; }
+  .about__partners {
+    padding-top: 40px;
+    text-align: center; }
 
 .section__header {
   position: relative;
