@@ -66,7 +66,9 @@ html(lang="ru")
             .section__content.section__content--services
                 article.service
                     header.service__header
-                        .service__icon: img(src="./img/services/scisors-white.svg", alt="")
+                        .service__icon
+                            img(src="./img/services/scisors-white.svg", alt="").service__icon-white
+                            img(src="./img/services/scisors.svg", alt="").service__icon-black
                         h3.service__title Стрижка
                         p.service__subtitle Мужская и Детская
                         a(href="#").service__more Подробнее
@@ -76,7 +78,9 @@ html(lang="ru")
                 
                 article.service
                     header.service__header
-                        .service__icon: img(src="./img/services/razor-white.svg", alt="")
+                        .service__icon
+                            img(src="./img/services/razor-white.svg", alt="").service__icon-white
+                            img(src="./img/services/razor.svg", alt="").service__icon-black
                         h3.service__title Бритьё
                         p.service__subtitle Классическое и Королевское
                         a(href="#").service__more Подробнее
@@ -86,7 +90,9 @@ html(lang="ru")
 
                 article.service
                     header.service__header
-                        .service__icon: img(src="./img/services/lotion-white.svg", alt="")
+                        .service__icon
+                            img(src="./img/services/lotion-white.svg", alt="").service__icon-white
+                            img(src="./img/services/lotion.svg", alt="").service__icon-black
                         h3.service__title Магазин
                         p.service__subtitle Уход и Аксессуары
                         a(href="#").service__more Подробнее
@@ -106,41 +112,50 @@ html(lang="ru")
 
                     table.prices-table
                         tr
-                            td Мужская стрижка
-                            td 1400
+                            td Cтрижка
+                            td 40
                         tr
-                            td Стрижка под машинку <br><small>(одна насадка)</small>
-                            td 600
+                            td Стрижка машинкой <br><small>(одна насадка)</small>
+                            td 30
                         tr
-                            td Стрижка Fade <br><small>(несколько насадок)</small>
-                            td 1000
+                            td Детская стрижка
+                            td 25
                         tr
-                            td Моделирование бороды
-                            td 800
+                            td Стрижка бороды
+                            td 25
                         tr
-                            td Ремонт бороды
-                            td 600
+                            td Классическое бритьё
+                            td 35
+                        tr
+                            td Королевское бритьё
+                            td 50
 
                     table.prices-table
                         caption Комплексные услуги
                         tr
-                            td Стрижка мужская + Королевское бритьё
-                            td 2000
+                            td Друг + друг
+                            td 70
                         tr
-                            td Стрижка мужская + Ремонт бороды
-                            td 1700
+                            td Отец и сын
+                            td 60
                         tr
-                            td Стрижка мужская + Моделирование бороды
-                            td 2000
+                            td Стрижка + Бритьё
+                            td 70
 
                     table.prices-table
-                        caption Спецпредложения
+                        caption Дополнительные услуги
                         tr
-                            td Друг + Друг
-                            td 2300
+                            td Усы
+                            td 20
                         tr
-                            td Отец + Сын
-                            td 2000
+                            td Бритьё головы
+                            td 35
+                        tr
+                            td Укладка
+                            td 10
+                        tr
+                            td Камуфляж седины
+                            td 25
 
                     .price-logo
                         p.price-logo__text Barbershop Trueman

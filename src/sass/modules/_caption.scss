@@ -38,6 +38,9 @@
     }
 
     &__title {
+        // positioning
+        position: relative;
+
         // box model
         margin: 0;
         padding: 20px 0;
@@ -53,6 +56,32 @@
         @include atDesktop {
             // typography
             font-size: 2rem;
+        }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 57px;
+            left: 0;
+
+            // box model
+            height: 7px;
+            width: 100%;
+            
+            // visual
+            background-image: url("./img/chain.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            @include atDesktop {
+                // positioning
+                top: 70px;
+
+                // box model
+                height: 8px;
+            }
         }
     }
 

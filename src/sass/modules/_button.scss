@@ -11,13 +11,20 @@
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    // letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
 
     // visual
     background-color: $grey;
-    // border: 3px double $white;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        // typography
+        color: $grey;
+
+        // visual
+        background-color: $white;
+    }
 
     &::before {
         content: "";
@@ -30,13 +37,10 @@
         top: -3px;
 
         // box model
-        height: calc(100% + 8px);
-        width: calc(100% + 8px);
         height: calc(100% + 6px);
         width: calc(100% + 6px);
 
         // visual
-        border: 1px solid $grey;
         border: 2px solid $grey;
     }
 
@@ -50,11 +54,5 @@
         // visual
         background-color: transparent;
         background-color: rgba($white, 0.4);
-        // border: 1px solid $grey;
     }
-
-    // &--center {
-    //     // box model
-    //     display: block;
-    // }
 }

@@ -25,6 +25,44 @@
         padding-top: 70px;
     }
 
+    &:hover {
+        .service__image {
+            // visual
+            opacity: 0;
+        }
+
+        .service__title {
+            // typography
+            color: $dark;
+        }
+
+        .service__subtitle {
+            // typography
+            color: $grey;
+        }
+
+        .service__more {
+            // typography
+            color: $red;
+        }
+
+        .service__cover {
+            // visual
+            border: 18px solid transparent;
+            border-image: url("./img/light-grey-border.png") 36;
+        }
+
+        .service__icon-white {
+            // visual
+            opacity: 0;
+        }
+
+        .service__icon-black {
+            // visual
+            opacity: 1;
+        }
+    }
+
     &__header {
         // positioning
         position: relative;
@@ -38,14 +76,47 @@
     }
 
     &__icon {
+        // positioning
+        position: relative;
+
         // box model
         width: 50px;
+        height: 50px;
         margin: 0 auto;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
 
-        img {
+        @include atDesktop {
+            // box model
+            width: 60px;
+            height: 60px;
+        }
+
+        &-white {
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 0;
+
             // box model
             width: 100%;
+
+            // visual
+            opacity: 1;
+            transition: all 0.3s ease-out;
+        }
+
+        &-black {
+            // positioning
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            // box model
+            width: 100%;
+
+            // visual
+            opacity: 0;
+            transition: all 0.3s ease-out;
         }
     }
 
@@ -63,6 +134,9 @@
         letter-spacing: 1px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+
+        // visual
+        transition: all 0.3s ease-out;
     }
 
     &__subtitle {
@@ -79,6 +153,9 @@
         letter-spacing: 0.5px;
         line-height: 1.4;
         text-transform: uppercase;
+
+        // visual
+        transition: all 0.3s ease-out;
     }
 
     &__more {
@@ -94,6 +171,9 @@
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+
+        // visual
+        transition: all 0.3s ease-out;
         
         @include atTabletsPortrait {
             // positioning
@@ -118,8 +198,9 @@
         // visual
         border: 18px solid transparent;
         border-image: url("./img/white-inv-border.png") 36;
+        // transition: all 0.3s ease-out;
     }
-
+    
     &__image {
         // positioning
         position: absolute;
@@ -130,6 +211,9 @@
         // box model
         height: 100%;
         width: 100%;
+
+        // visual
+        // transition: all 0.3s ease-out;
 
         img {
             // box model

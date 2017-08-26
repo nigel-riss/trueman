@@ -25,9 +25,9 @@
         // positioning
         position: absolute;
         bottom: auto;
-        left: 260px;
+        left: 250px;
         right: auto;
-        top: 40px;
+        top: 35px;
         z-index: 4;
 
         // box model
@@ -100,9 +100,14 @@
             color: $white;
             font-family: $titleFont;
             font-size: 1.25rem;
+            // font-weight: 700;
+            letter-spacing: 0.5px;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
+
+            // visual
+            transition: all 0.3s ease-out;
 
             @include atDesktop {
                 // box model
@@ -110,6 +115,19 @@
 
                 // typography
                 font-size: 1rem;
+            }
+
+            @include atDesktopLarge {
+                // box model
+                padding: 7px;
+
+                // typography
+                font-size: 1.125rem;
+            }
+
+            &:hover {
+                // typography
+                color: $red;
             }
         }
     }
