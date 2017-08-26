@@ -1,5 +1,27 @@
 .footer-block {
+    // positioning
+    position: relative;
+
+    @include atTabletsLandscape {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 70px;
+    }
+
     &--right {
-        
+        @include atTabletsLandscape {
+            // positioning
+            position: absolute;
+            bottom: 40px;
+            right: 0;
+            top: 0px;
+
+            // box model
+            // align-self: ;
+            display: block;
+            float: right;
+            // border: 1px solid red;
+        }
     }
 }

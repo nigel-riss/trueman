@@ -1,9 +1,19 @@
 .footer-logo {
     // positioning
     position: absolute;
-    right: 30px;
-    // top: 30px;
-    bottom: 30px;
+    bottom: 0;
+    right: 0;
+
+    @include atTabletsLandscape {
+        // positioning
+        position: relative;
+        bottom: auto;
+        right: auto;
+
+        // box model
+        display: inline-block;
+        vertical-align: top;
+    }
 
     &__text {
         // box model
@@ -13,6 +23,11 @@
     &__image {
         // box model
         width: 100px;
+
+        @include atTabletsLandscape {
+            // box model
+            width: 220px;
+        }
 
         img {
             // box model

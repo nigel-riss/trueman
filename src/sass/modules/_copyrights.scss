@@ -1,4 +1,10 @@
 .copyrights {
+    @include atTabletsLandscape {
+        // positioning
+        position: absolute;
+        bottom: 0;
+    }
+
     p {
         // box model
         margin: 0;
@@ -7,5 +13,11 @@
         // typography
         color: $white;
         font-size: 0.75rem;
+        line-height: 1.5;
+
+        a {
+            // typography
+            color: $white;
+        }
     }
 }

@@ -123,14 +123,33 @@
 
             @include atDesktopLarge {
                 // box model
+                display: flex;
+                justify-content: space-between;
                 width: 1280px;
                 padding: 60px 0;
             }
         }
 
         &--partners {
+            // box model
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+
             // typography
             text-align: center;
+
+            @include atTabletsLandscape {
+                // box model
+                justify-content: space-between;
+            }
+
+            @include atDesktopLarge {
+                // box model
+                width: 1340px;
+                padding: 60px 0;
+            }
         }
     }
 

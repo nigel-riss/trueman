@@ -9,4 +9,23 @@
     background-color: $grey;
     background-image: url("./img/footer-bg.jpg");
     background-size: cover;
+
+    @include atTabletsLandscape {
+        // box model
+        // display: flex;
+        padding: 50px;
+        padding-bottom: 10px;
+    }
+
+    &__content {
+        // positioning
+        position: relative;
+
+        
+        @include atDesktopLarge {
+            // box model
+            width: 1280px;
+            margin: 0 auto;
+        }
+    }
 }

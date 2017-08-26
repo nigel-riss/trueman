@@ -77,6 +77,69 @@
             width: 1280px;
             margin: 0 auto;
         }
+
+        &::after {
+            content: "";
+
+            // box model
+            display: table;
+            clear: both;
+            width: 100%;
+
+        }
+    }
+
+    &__image {
+        // positioning
+        position: relative;
+
+        // box model
+        height: calc(100vw - 60px);
+
+        @include atTabletsPortrait {
+            // box model
+            height: 300px;
+            width: 300px;
+            float: right;
+            margin-bottom: 40px;
+            margin-left: 40px;
+        }
+        
+        @include atTabletsLandscape {
+            // box model
+            margin-top: -50px;
+        }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 2px;
+            left: 2px;
+            right: 2px;
+            top: 2px;
+
+            // visual
+            border: 2px solid $white;
+            // border: 18px solid transparent;
+            // border-image: url("./img/white-inv-border.png") 36;
+        }
+
+        &--inner {
+            @include atTabletsLandscape {
+                // box model
+                width: 50vw;
+                height: 50vw;
+                max-width: 600px;
+                max-height: 600px;
+            }
+        }
+        
+        img {
+            // box model
+            width: 100%;
+        }
     }
 
     &__description {
@@ -131,9 +194,26 @@
 
     &__partners {
         // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         padding-top: 40px;
         
         // typography
         text-align: center;
+        
+        @include atTabletsLandscape {
+            // box model
+            justify-content: space-between;
+            margin: 0 -10px;
+        }
+        
+        @include atDesktopLarge {
+            // box model
+            width: 1340px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
     }
 }

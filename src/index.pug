@@ -52,6 +52,7 @@ html(lang="ru")
                 h2.about__title Добро пожаловать в&nbsp;Trueman
 
             .about__content
+                .about__image: img(src="img/bshop.jpg", alt="Барбершоп Труман интерьер")
                 p.about__description TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность. Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br><br><em>TRUEMAN</em> — барбершоп по&#8209;настоящему.
 
                 .about__more
@@ -106,10 +107,6 @@ html(lang="ru")
 
             .section__content.section__content--prices
                 .prices-wrapper
-                    //- .price-logo
-                    //-     p.price-logo__text Barbershop Trueman
-                    //-     .price-logo__image: img(src="./img/logo-black.svg", alt="Trueman Barbershop Logo")
-
                     table.prices-table
                         tr
                             td Cтрижка
@@ -221,31 +218,33 @@ html(lang="ru")
             #map.location__map
 
         footer.site-footer
-            .footer-logo
-                p.footer-logo__text Barbershop Trueman
-                .footer-logo__image: img(src="./img/logo.svg", alt="Trueman Barbershop Logo")
+            .site-footer__content
+                .footer-logo
+                    p.footer-logo__text Barbershop Trueman
+                    .footer-logo__image: img(src="./img/logo.svg", alt="Trueman Barbershop Logo")
 
-            .footer-block
-                .footer-info
-                    h3.footer-info__title Контакты
-                    p.footer-info__text г. Минск, пр. Независимости, 46<br>ООО  «Труман групп»
-                    
-                .footer-info
-                    h3.footer-info__title Часы работы
-                    p.footer-info__text Ежедневно с 9 до 22
-                    
+                .footer-block
+                    .footer-info
+                        h3.footer-info__title Контакты
+                        a(href="tel:+375296396000").footer-info__tel +375 296 396 000
+                        p.footer-info__text г. Минск, пр. Независимости, 46<br>ООО  «Труман групп»
+                        
+                    .footer-info
+                        h3.footer-info__title Часы работы
+                        p.footer-info__text Ежедневно с 9 до 22
+                        
 
-            .footer-block.footer-block--right
-                .social
-                    h3.social__title Мы в соцсетях
-                    .social__content
-                        a(href="#").social-icon: img(src="./img/social/instagram.svg", alt="Instagram") 
-                        a(href="#").social-icon: img(src="./img/social/facebook.svg", alt="Facebook") 
-                        a(href="#").social-icon: img(src="./img/social/vk.svg", alt="VKontakte") 
+                .footer-block.footer-block--right
+                    .social
+                        h3.social__title Мы в соцсетях
+                        .social__content
+                            a(href="#").social-icon: img(src="./img/social/instagram.svg", alt="Instagram") 
+                            a(href="#").social-icon: img(src="./img/social/facebook.svg", alt="Facebook") 
+                            a(href="#").social-icon: img(src="./img/social/vk.svg", alt="VKontakte") 
 
-                .copyrights
-                    p © Барбершоп Trueman 
-                    p Сделано студией Агонь
+                    .copyrights
+                        p © Барбершоп Trueman 
+                        p Сделано студией <a href="http://agonstudio.ru/">Агонь</a>
 
         script(src="./map.js")
         script(src="./app.js")

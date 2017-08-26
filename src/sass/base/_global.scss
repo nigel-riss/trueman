@@ -9,6 +9,9 @@ body {
     color: $grey;
     font-family: $mainFont;
     font-size: 16px;
+
+    // visual
+    overflow-x: hidden;
 }
 
 *,
@@ -22,11 +25,4 @@ em {
     // typography
     color: $red;
     font-style: normal;
-}
-
-.but-desktop {
-    @include atDesktop {
-        // box model
-        display: none;
-    }
 }

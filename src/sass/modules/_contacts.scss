@@ -117,9 +117,15 @@
         z-index: 5;
 
         // box model
+        display: none;
         padding-top: 25px;
 
         // typography
         text-align: right;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+        }
     }
 }
