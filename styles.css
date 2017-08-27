@@ -1282,7 +1282,6 @@ a {
         font-weight: 400; }
     .prices-table td:nth-of-type(2) {
       vertical-align: middle;
-      color: #c21f39;
       font-size: 0.875rem;
       font-weight: 700;
       text-align: right;
