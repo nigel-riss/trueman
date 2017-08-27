@@ -31,11 +31,11 @@ html(lang="ru")
             nav.main-menu
                 .main-menu__logo: img(src="img/logo.svg", alt="Trueman Barbershop Logo")
                 ul.main-menu__list
-                    li: a(href="#") О нас
-                    li: a(href="#") Услуги
-                    li: a(href="#") Магазин
-                    li: a(href="#") Мастера
-                    li: a(href="#") Контакты
+                    li: a(href="about.html") О нас
+                    li: a(href="index.html#services") Услуги
+                    //- li: a(href="#") Магазин
+                    //- li: a(href="#") Мастера
+                    li: a(href="index.html#contacts") Контакты
 
             .caption
                 .caption__content
@@ -60,7 +60,7 @@ html(lang="ru")
 
                 .about__deco: img(src="", alt="Barber at work")
 
-        section.section.section--services
+        section.section.section--services#services
             header.section__header
                 h2 Мы предлагаем
 
@@ -72,7 +72,7 @@ html(lang="ru")
                             img(src="./img/services/scisors.svg", alt="").service__icon-black
                         h3.service__title Стрижка
                         p.service__subtitle Мужская и Детская
-                        a(href="#").service__more Подробнее
+                        //- .service__more: a(href="haircut.html") Подробнее
 
                     .service__cover
                     .service__image: img(src="./img/services/haircut.jpg", alt="Мужская стрижка")
@@ -84,7 +84,7 @@ html(lang="ru")
                             img(src="./img/services/razor.svg", alt="").service__icon-black
                         h3.service__title Бритьё
                         p.service__subtitle Классическое и Королевское
-                        a(href="#").service__more Подробнее
+                        //- .service__more: a(href="shave.html") Подробнее
 
                     .service__cover
                     .service__image: img(src="./img/services/shave.jpg", alt="Бритьё бороды")
@@ -96,7 +96,7 @@ html(lang="ru")
                             img(src="./img/services/lotion.svg", alt="").service__icon-black
                         h3.service__title Магазин
                         p.service__subtitle Уход и Аксессуары
-                        a(href="#").service__more Подробнее
+                        //- .service__more: a(href="#") Подробнее
 
                     .service__cover
                     .service__image: img(src="./img/services/shop.jpg", alt="Магазин аксессуаров барбершопа")
@@ -160,7 +160,7 @@ html(lang="ru")
 
                     a(href="price.html").button Все услуги
 
-        section.section.section--team
+        //- section.section.section--team
             header.section__header
                 h2 Мастера
 
@@ -207,7 +207,7 @@ html(lang="ru")
                 .partner: img(src="./img/partners/truefitt-and-hill.png", alt="Truefitt & Hill logo")
                 .partner: img(src="./img/partners/proraso.png", alt="Proraso logo")
 
-        section.location
+        section.location#contacts
             .map-label
                 header.map-label__header
                     p.map-label__city Минск
