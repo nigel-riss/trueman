@@ -408,6 +408,12 @@ em {
   color: #c21f39;
   font-style: normal; }
 
+a {
+  color: #005392;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 .button {
   position: relative;
   display: inline-block;
@@ -422,6 +428,7 @@ em {
   transition: all 0.3s ease-out; }
   .button:hover {
     color: #2b2a29;
+    text-decoration: none;
     background-color: #ffffff; }
   .button::before {
     content: "";
@@ -524,6 +531,9 @@ em {
   @media (min-width: 900px) {
     .inner-header {
       margin: 40px; } }
+  @media (min-width: 1200px) {
+    .inner-header {
+      margin: 40px 60px; } }
   @media (min-width: 1400px) {
     .inner-header {
       width: 1280px;
@@ -859,17 +869,19 @@ em {
   padding-top: 60px;
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   @media (min-width: 900px) {
     .about {
       padding: 40px;
       padding-top: 60px;
       padding-bottom: 100px;
-      background-image: url("./img/about-bg-l.jpg");
-      background-size: cover; } }
+      background-image: url("./img/about-bg-l.jpg"); } }
   @media (min-width: 1200px) {
     .about {
       padding: 60px; } }
+  .about--inner {
+    background-size: contain; }
   .about__header {
     margin-bottom: 20px; }
     @media (min-width: 1200px) {
@@ -915,9 +927,6 @@ em {
         float: right;
         margin-bottom: 40px;
         margin-left: 40px; } }
-    @media (min-width: 900px) {
-      .about__image {
-        margin-top: -50px; } }
     .about__image::before {
       content: "";
       position: absolute;
@@ -928,8 +937,8 @@ em {
       border: 2px solid #ffffff; }
     @media (min-width: 900px) {
       .about__image--inner {
-        width: 50vw;
-        height: 50vw;
+        width: 42vw;
+        height: 42vw;
         max-width: 600px;
         max-height: 600px; } }
     .about__image img {
@@ -939,9 +948,6 @@ em {
     color: #2b2a29;
     font-size: 1rem;
     line-height: 1.75; }
-    @media (min-width: 900px) {
-      .about__description {
-        width: 400px; } }
     @media (min-width: 1200px) {
       .about__description {
         width: 600px; } }
@@ -1210,7 +1216,7 @@ em {
     padding: 40px;
     padding-top: 60px;
     border: 18px solid transparent;
-    border-image: url("./img/grey-border.png") 36; }
+    border-image: url("./img/light-grey-border.png") 36; }
     .prices-wrapper::before {
       content: "";
       position: absolute;
@@ -1273,6 +1279,15 @@ em {
       @media (min-width: 1200px) {
         .prices-table td:nth-of-type(2) {
           font-size: 1.125rem; } }
+  .prices-table td.prices-table__desc {
+    padding-bottom: 20px;
+    color: #2b2a29;
+    font-weight: 400;
+    line-height: 1.5;
+    border-bottom: none; }
+    @media (min-width: 700px) {
+      .prices-table td.prices-table__desc {
+        font-size: 0.875rem; } }
   .prices-table caption {
     padding-bottom: 5px;
     padding-left: 1px;
@@ -1286,10 +1301,10 @@ em {
     text-transform: uppercase; }
     @media (min-width: 700px) {
       .prices-table caption {
-        font-size: 1rem; } }
+        font-size: 1.125rem; } }
     @media (min-width: 900px) {
       .prices-table caption {
-        font-size: 1.125rem; } }
+        font-size: 1.25rem; } }
     @media (min-width: 1200px) {
       .prices-table caption {
         font-size: 1.5rem; } }
@@ -1301,6 +1316,45 @@ em {
   width: 170px;
   margin: 0 auto;
   padding: 50px 0; }
+
+@media (min-width: 700px) {
+  .price-inner {
+    padding: 40px 20px;
+    border: 18px solid transparent;
+    border-image: url("./img/light-grey-border.png") 36; } }
+
+@media (min-width: 1200px) {
+  .price-inner {
+    padding: 40px; } }
+
+@media (min-width: 1400px) {
+  .price-inner {
+    width: 1280px;
+    margin: 0 auto; } }
+
+@media (min-width: 900px) {
+  .price-inner__column {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px; } }
+
+@media (min-width: 1200px) {
+  .price-inner__column {
+    padding-right: 30px; } }
+
+@media (min-width: 900px) {
+  .price-inner__column--right {
+    padding-left: 20px;
+    padding-right: 0; } }
+
+@media (min-width: 1200px) {
+  .price-inner__column--right {
+    padding-left: 30px; } }
+
+.price-inner__more {
+  padding-top: 40px;
+  text-align: center; }
 
 .member {
   position: relative;

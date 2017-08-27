@@ -23,6 +23,11 @@
         margin: 40px;
     }
 
+    @include atDesktop {
+        // box model
+        margin: 40px 60px;
+    }
+
     @include atDesktopLarge {
         // box model
         width: 1280px;

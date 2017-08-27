@@ -26,3 +26,14 @@ em {
     color: $red;
     font-style: normal;
 }
+
+a {
+    // typography
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+        // typography
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,57 @@
+.price-inner {
+    @include atTabletsPortrait {
+        // box model
+        padding: 40px 20px;
+
+        // visual
+        border: 18px solid transparent;
+        border-image: url("./img/light-grey-border.png") 36;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 40px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__column {
+        @include atTabletsLandscape {
+            // box model
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 20px;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-right: 30px;
+        }
+
+        &--right {
+            @include atTabletsLandscape {
+                // box model
+                padding-left: 20px;
+                padding-right: 0;
+            }
+
+            @include atDesktop {
+                // box model
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &__more {
+        // box model
+        padding-top: 40px;
+
+        // typography
+        text-align: center;
+    }
+}
