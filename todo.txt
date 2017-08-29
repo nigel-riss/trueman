@@ -1,0 +1,11 @@
+01. Favicon
+02. Social icons
+03. About inner bg images
+04. Image sections shadows
+05. Price bg logo
+06. Shave content
+07. Haircut content
+08. Connect Autoprefixer
+09. Connect Minificator
+10. Fix iOS bg-image problem
+11. Test on popular browsers

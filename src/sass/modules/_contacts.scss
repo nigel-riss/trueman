@@ -1,4 +1,8 @@
 .contacts {
+    // positioning
+    position: relative;
+    z-index: 1;
+    
     // typography
     color: $white;
 

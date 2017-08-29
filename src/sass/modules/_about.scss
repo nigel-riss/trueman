@@ -8,7 +8,7 @@
     background-image: url("./img/about-bg.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     // background-size: 200%;
     
     @include atTabletsLandscape {
@@ -24,11 +24,17 @@
     @include atDesktop {
         // box model
         padding: 60px;
+
+        // visual
+        background-size: cover;
     }
 
     &--inner {
         // visual
-        background-size: contain;
+
+        @include atDesktop {
+            // visual
+        }
     }
 
     &__header {
