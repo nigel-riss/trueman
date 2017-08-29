@@ -927,6 +927,11 @@ a {
         float: right;
         margin-bottom: 40px;
         margin-left: 40px; } }
+    @media (min-width: 1200px) {
+      .about__image {
+        height: 400px;
+        width: 400px;
+        margin-top: -50px; } }
     .about__image::before {
       content: "";
       position: absolute;
@@ -960,21 +965,9 @@ a {
   .about__deco {
     display: none; }
   .about__partners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
     padding-top: 40px;
     text-align: center; }
-    @media (min-width: 900px) {
-      .about__partners {
-        justify-content: space-between;
-        margin: 0 -10px; } }
-    @media (min-width: 1400px) {
-      .about__partners {
-        width: 1340px;
-        margin: 0 auto;
-        padding: 60px 0; } }
 
 .section__header {
   position: relative;
@@ -1030,12 +1023,6 @@ a {
     margin: 0 auto;
     padding-bottom: 100px;
     text-align: center; }
-    @media (min-width: 900px) {
-      .section__content--prices {
-        width: 800px; } }
-    @media (min-width: 1200px) {
-      .section__content--prices {
-        width: 900px; } }
   .section__content--team {
     padding: 30px 15px;
     font-size: 0;
@@ -1053,18 +1040,8 @@ a {
         width: 1280px;
         padding: 60px 0; } }
   .section__content--partners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
     text-align: center; }
-    @media (min-width: 900px) {
-      .section__content--partners {
-        justify-content: space-between; } }
-    @media (min-width: 1400px) {
-      .section__content--partners {
-        width: 1340px;
-        padding: 60px 0; } }
 
 .section--services {
   margin-top: -35px; }
@@ -1115,6 +1092,7 @@ a {
   .service:hover .service__more a {
     color: #c21f39;
     text-decoration: none;
+    border-color: #888;
     border-color: #2b2a29; }
     .service:hover .service__more a:hover {
       color: #ffffff; }
@@ -1282,6 +1260,7 @@ a {
         font-weight: 400; }
     .prices-table td:nth-of-type(2) {
       vertical-align: middle;
+      color: #c21f39;
       font-size: 0.875rem;
       font-weight: 700;
       text-align: right;
@@ -1292,6 +1271,9 @@ a {
       @media (min-width: 1200px) {
         .prices-table td:nth-of-type(2) {
           font-size: 1.125rem; } }
+      .prices-table td:nth-of-type(2) span {
+        color: #1a1210;
+        font-size: 0.8em; }
   .prices-table td.prices-table__desc {
     padding-bottom: 20px;
     color: #2b2a29;
@@ -1329,6 +1311,9 @@ a {
   width: 170px;
   margin: 0 auto;
   padding: 50px 0; }
+  @media (min-width: 1200px) {
+    .price-logo__image {
+      padding-top: 70px; } }
 
 @media (min-width: 700px) {
   .price-inner {
@@ -1471,6 +1456,7 @@ a {
   vertical-align: middle;
   height: 80px;
   margin: 15px 10px;
+  margin: 20px;
   opacity: 0.34; }
   @media (min-width: 900px) {
     .partner {
@@ -1478,7 +1464,7 @@ a {
   @media (min-width: 1200px) {
     .partner {
       height: 120px;
-      margin: 15px 20px; } }
+      margin: 30px; } }
   @media (min-width: 1400px) {
     .partner {
       height: 140px;
@@ -1493,6 +1479,9 @@ a {
     @media (min-width: 700px) {
       .location__map {
         height: 500px; } }
+    @media (min-width: 1200px) {
+      .location__map {
+        height: 600px; } }
 
 .map-label {
   position: absolute;
@@ -1507,9 +1496,18 @@ a {
   @media (min-width: 900px) {
     .map-label {
       display: block; } }
+  @media (min-width: 1200px) {
+    .map-label {
+      height: 400px;
+      width: 400px; } }
   .map-label__header {
     padding: 15px;
     padding-top: 215px; }
+    @media (min-width: 1200px) {
+      .map-label__header {
+        padding: 20px;
+        padding-top: 285px;
+        padding-top: 290px; } }
   .map-label__city {
     margin: 0;
     padding: 0;
@@ -1517,6 +1515,11 @@ a {
     font-family: "Lora", serif;
     font-size: 1.25rem;
     text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .map-label__city {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+        font-weight: 700; } }
   .map-label__title {
     margin: 0;
     padding: 0;
@@ -1525,15 +1528,26 @@ a {
     font-size: 0.875rem;
     font-weight: 400;
     text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .map-label__title {
+        font-size: 1.25rem; } }
   .map-label__address {
     margin: 0;
     padding: 0;
+    font-family: "Lora", serif;
     font-size: 0.8rem; }
+    @media (min-width: 1200px) {
+      .map-label__address {
+        font-size: 1rem; } }
   .map-label__logo {
     position: absolute;
     bottom: 15px;
     right: 25px;
     height: 70px; }
+    @media (min-width: 1200px) {
+      .map-label__logo {
+        bottom: 20px;
+        height: 90px; } }
     .map-label__logo img {
       height: 100%; }
   .map-label__photo {
@@ -1555,11 +1569,14 @@ a {
     .site-footer {
       padding: 50px;
       padding-bottom: 10px; } }
+  @media (min-width: 1200px) {
+    .site-footer {
+      padding: 60px;
+      padding-bottom: 20px; } }
   .site-footer__content {
     position: relative; }
     @media (min-width: 1400px) {
       .site-footer__content {
-        width: 1280px;
         margin: 0 auto; } }
 
 .footer-logo {
@@ -1615,6 +1632,7 @@ a {
         font-size: 1.125rem; } }
   .footer-info__tel {
     color: #ffffff;
+    font-family: "Lora", serif;
     font-size: 1.25rem;
     line-height: 1.5;
     text-decoration: none; }
@@ -1622,7 +1640,7 @@ a {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lora", serif;
     font-size: 0.875rem;
     line-height: 1.5; }
     @media (min-width: 900px) {
