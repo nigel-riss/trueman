@@ -736,6 +736,8 @@ a {
         color: #c21f39; }
 
 .contacts {
+  position: relative;
+  z-index: 1;
   color: #ffffff; }
   @media (min-width: 700px) {
     .contacts {
@@ -870,7 +872,7 @@ a {
   background-image: url("./img/about-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   @media (min-width: 900px) {
     .about {
       padding: 40px;
@@ -879,9 +881,8 @@ a {
       background-image: url("./img/about-bg-l.jpg"); } }
   @media (min-width: 1200px) {
     .about {
-      padding: 60px; } }
-  .about--inner {
-    background-size: contain; }
+      padding: 60px;
+      background-size: cover; } }
   .about__header {
     margin-bottom: 20px; }
     @media (min-width: 1200px) {
@@ -1174,7 +1175,7 @@ a {
     .service__more a {
       padding: 10px 20px;
       color: #ffffff;
-      border: 2px solid #ffffff;
+      border: 1px solid #ffffff;
       transition: all 0.3s ease-out; }
       .service__more a:hover {
         color: #ffffff;
@@ -1242,6 +1243,7 @@ a {
     line-height: 1.5; }
     .prices-table td:nth-of-type(1) {
       vertical-align: middle;
+      vertical-align: bottom;
       padding-left: 0;
       padding-right: 20px;
       font-size: 0.875rem;
@@ -1260,6 +1262,7 @@ a {
         font-weight: 400; }
     .prices-table td:nth-of-type(2) {
       vertical-align: middle;
+      vertical-align: bottom;
       color: #c21f39;
       font-size: 0.875rem;
       font-weight: 700;
