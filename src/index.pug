@@ -103,56 +103,59 @@ html(lang="ru")
 
         section.section.section--prices
             header.section__header
-                h2 Прайс лист
+                h2 Прайс-лист
 
             .section__content.section__content--prices
                 .prices-wrapper
-                    table.prices-table
-                        tr
-                            td Cтрижка
-                            td 40 р.
-                        tr
-                            td Стрижка машинкой <br><small>(одна насадка)</small>
-                            td 30 р.
-                        tr
-                            td Детская стрижка
-                            td 25 р.
-                        tr
-                            td Стрижка бороды
-                            td 25 р.
-                        tr
-                            td Классическое бритьё
-                            td 35 р.
-                        tr
-                            td Королевское бритьё
-                            td 50 р.
+                    .price-inner__column
+                        table.prices-table
+                            caption Основные услуги
+                            tr
+                                td Cтрижка мужская
+                                td 40 <span>p.</span>
+                            tr
+                                td Стрижка машинкой <br><small>(одна насадка)</small>
+                                td 30 <span>p.</span>
+                            tr
+                                td Детская стрижка <br><small>(от 5-ти лет)</small>
+                                td 25 <span>p.</span>
+                            tr
+                                td Стрижка бороды
+                                td 25 <span>p.</span>
+                            tr
+                                td Классическое бритьё
+                                td 35 <span>p.</span>
+                            tr
+                                td Королевское бритьё <br><small>(c косметикой Truefitt & Hill)</small>
+                                td 50 <span>p.</span>
 
-                    table.prices-table
-                        caption Комплексные услуги
-                        tr
-                            td Друг + друг
-                            td 70 р.
-                        tr
-                            td Отец и сын
-                            td 60 р.
-                        tr
-                            td Стрижка + Бритьё
-                            td 70 р.
+                    .price-inner__column.price-inner__column--right
+                        table.prices-table
+                            caption Комплексные услуги
+                            tr
+                                td Друг + друг
+                                td 70 <span>p.</span>
+                            tr
+                                td Отец и сын
+                                td 60 <span>p.</span>
+                            tr
+                                td Стрижка + Бритьё
+                                td 70 <span>p.</span>
 
-                    table.prices-table
-                        caption Дополнительные услуги
-                        tr
-                            td Усы
-                            td 20 р.
-                        tr
-                            td Бритьё головы
-                            td 35 р.
-                        tr
-                            td Укладка
-                            td 10 р.
-                        tr
-                            td Камуфляж седины
-                            td 25 р.
+                        table.prices-table
+                            caption Дополнительные услуги
+                            tr
+                                td Усы
+                                td 20 <span>p.</span>
+                            tr
+                                td Бритьё головы
+                                td 35 <span>p.</span>
+                            tr
+                                td Укладка
+                                td 10 <span>p.</span>
+                            tr
+                                td Камуфляж седины
+                                td 25 <span>p.</span>
 
                     .price-logo
                         p.price-logo__text Barbershop Trueman
@@ -204,8 +207,10 @@ html(lang="ru")
                 .partner: img(src="./img/partners/oldboy.png", alt="Oldboy logo")
                 .partner: img(src="./img/partners/yacht.png", alt="Yacht Event logo")
                 .partner: img(src="./img/partners/american-crew.png", alt="American Crew logo")
+                | <br>
                 .partner: img(src="./img/partners/truefitt-and-hill.png", alt="Truefitt & Hill logo")
                 .partner: img(src="./img/partners/proraso.png", alt="Proraso logo")
+                .partner: img(src="./img/partners/g-tonic.png", alt="Gentlemens tonic logo")
 
         section.location#contacts
             .map-label

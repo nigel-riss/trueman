@@ -109,9 +109,11 @@
             margin-left: 40px;
         }
         
-        @include atTabletsLandscape {
+        @include atDesktop {
             // box model
-            // margin-top: -50px;
+            height: 400px;
+            width: 400px;
+            margin-top: -50px;
         }
 
         &::before {
@@ -198,26 +200,10 @@
 
     &__partners {
         // box model
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         width: 100%;
         padding-top: 40px;
         
         // typography
         text-align: center;
-        
-        @include atTabletsLandscape {
-            // box model
-            justify-content: space-between;
-            margin: 0 -10px;
-        }
-        
-        @include atDesktopLarge {
-            // box model
-            width: 1340px;
-            margin: 0 auto;
-            padding: 60px 0;
-        }
     }
 }

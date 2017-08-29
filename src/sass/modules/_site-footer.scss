@@ -17,6 +17,12 @@
         padding-bottom: 10px;
     }
 
+    @include atDesktop {
+        // box model
+        padding: 60px;
+        padding-bottom: 20px;
+    }
+
     &__content {
         // positioning
         position: relative;
@@ -24,7 +30,7 @@
         
         @include atDesktopLarge {
             // box model
-            width: 1280px;
+            // width: 1280px;
             margin: 0 auto;
         }
     }

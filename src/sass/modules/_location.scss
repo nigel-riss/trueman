@@ -10,5 +10,10 @@
             // box model
             height: 500px;
         }
+
+        @include atDesktop {
+            // box model
+            height: 600px;
+        }
     }
 }

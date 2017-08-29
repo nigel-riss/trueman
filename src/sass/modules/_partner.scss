@@ -4,6 +4,7 @@
     vertical-align: middle;
     height: 80px;
     margin: 15px 10px;
+    margin: 20px;
     // border: 1px solid red;
 
     // visual
@@ -17,7 +18,7 @@
     @include atDesktop {
         // box model
         height: 120px;
-        margin: 15px 20px;
+        margin: 30px;
     }
     
     @include atDesktopLarge {

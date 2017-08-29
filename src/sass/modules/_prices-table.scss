@@ -54,7 +54,7 @@
             vertical-align: middle;
             
             // typography
-            // color: $red;
+            color: $red;
             font-size: 0.875rem;
             font-weight: 700;
             text-align: right;
@@ -70,6 +70,12 @@
             @include atDesktop {
                 // typography
                 font-size: 1.125rem;
+            }
+
+            span {
+                // typography
+                color: $dark;
+                font-size: 0.8em;
             }
         }
     }

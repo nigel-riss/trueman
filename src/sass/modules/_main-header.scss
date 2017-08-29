@@ -19,27 +19,27 @@
         background-position: center center;
         background-size: cover;
     }
-
+    
     @include atTabletsLandscape {
         // box model
         margin: 40px;
         padding: 40px;
         // width: 820px;
-
+        
         // visual
         background-image: url("./img/header-bg-l.jpg");
     }
-
+    
     @include atDesktop {
         // box model
         height: 680px;
         margin: 40px 60px;
         padding: 40px 60px;
-
+        
         // visual
         background-position: left top;
     }
-
+    
     @include atDesktopLarge {
         // box model
         width: 1280px;
@@ -53,29 +53,29 @@
         left: 0;
         top: 0;
         z-index: 1;
-
+        
         // box model
         display: none;
         width: 100%;
         height: 100%;
-
+        
         // visual
         border: 18px solid transparent;
         border-image: url("./img/white-inv-border.png") 36;
-
+        
         @include atTabletsLandscape {
             // box model
             display: block;
         }
     }
-
+    
     &__deco {
         // positioning
         position: absolute;
         left: 0;
         top: 80px;
         z-index: 0;
-
+        
         // box model
         width: 120px;
 
