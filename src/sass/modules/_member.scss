@@ -104,7 +104,9 @@
 
         // visual
         background-color: rgba($grey, 0.35);
-        border: 18px solid transparent;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
         border-image: url("./img/white-inv-border.png") 36;
         
         &--join {

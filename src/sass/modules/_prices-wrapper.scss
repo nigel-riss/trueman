@@ -10,7 +10,9 @@
         padding-top: 60px;
 
         // visual
-        border: 18px solid transparent;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
         border-image: url("./img/light-grey-border.png") 36;
 
         &::before {
@@ -21,10 +23,8 @@
             top: -25px;
             left: 50%;
             transform: translateX(-50%);
-            // z-index: 2;
 
             // box model
-            // border: 1px solid red;
             height: 20px;
             width: 270px;
 

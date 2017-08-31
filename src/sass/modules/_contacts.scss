@@ -56,18 +56,12 @@
             // typography
             text-align: right;
         }
-
-        @include atDesktop {
-            // typography
-            // text-align: left;
-        }
         
         a {
             // typography
             color: $white;
             font-family: $titleFont;
             font-size: 1.25rem;
-            // font-weight: 700;
             text-align: center;
             text-decoration: none;
 
@@ -87,7 +81,6 @@
         // box model
         display: none;
 
-        // @include atTabletsLandscape {
         @include atTabletsPortrait {
             // box model
             display: block;
@@ -104,7 +97,6 @@
 
         @include atDesktop {
             // typography
-            // text-align: left;
             font-size: 0.875rem;
             line-height: 1.5;
         }

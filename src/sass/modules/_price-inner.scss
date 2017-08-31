@@ -7,7 +7,9 @@
         padding: 40px 20px;
 
         // visual
-        border: 18px solid transparent;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
         border-image: url("./img/light-grey-border.png") 36;
     }
 
@@ -81,7 +83,6 @@
             background-image: url("./img/price-bg.png");
             background-repeat: no-repeat;
             background-position: center center;
-            // box model
         }
     }
 }

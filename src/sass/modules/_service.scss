@@ -63,7 +63,9 @@
 
         .service__cover {
             // visual
-            border: 18px solid transparent;
+            border-width: 18px;
+            border-style: solid;
+            border-color: $white;
             border-image: url("./img/light-grey-border.png") 36;
         }
 
@@ -206,7 +208,6 @@
 
             // visual
             border: 1px solid $white;
-            // border: 2px solid transparent;
             transition: all 0.3s ease-out;
 
             &:hover {
@@ -231,9 +232,10 @@
         width: 100%;
 
         // visual
-        border: 18px solid transparent;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
         border-image: url("./img/white-inv-border.png") 36;
-        // transition: all 0.3s ease-out;
     }
     
     &__image {
@@ -246,9 +248,6 @@
         // box model
         height: 100%;
         width: 100%;
-
-        // visual
-        // transition: all 0.3s ease-out;
 
         img {
             // box model

@@ -12,7 +12,7 @@
 
     // visual
     background-color: $white;
-    // overflow: hidden;
+    overflow: hidden;
     box-shadow: 0 0 14px rgba($grey, 0.5);
 
     @include atTabletsLandscape {
@@ -84,7 +84,6 @@
         // typography
         font-family: $titleFont;
         font-size: 0.8rem;
-        // font-weight: 700;
 
         @include atDesktop {
             // box model

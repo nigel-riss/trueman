@@ -9,9 +9,10 @@
         margin: 0 auto;
 
         // visual
-        border: 18px solid transparent;
-        border-image: url("./img/title-border.png") 36 stretch stretch;
-        // border-image: url("./img/title-border.png") 16 stretch stretch;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
+        border-image: url("./img/title-border.png") 36;
 
         @include atTabletsLandscape {
             // box model
@@ -53,7 +54,6 @@
     &__content {
         // box model
         padding: 30px;
-        // padding-bottom: 80px;
 
         @include atTabletsLandscape {
             // box model
@@ -91,16 +91,6 @@
 
             // typography
             text-align: center;
-
-            @include atTabletsLandscape {
-                // box model
-                // width: 800px;
-            }
-
-            @include atDesktop {
-                // box model
-                // width: 900px;
-            }
         }
 
         &--team {

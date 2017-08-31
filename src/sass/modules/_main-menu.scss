@@ -12,7 +12,6 @@
 
     // visual
     background-color: $dark;
-    // opacity: 0;
     transition: all 0.3s ease-out;
     visibility: hidden;
 
@@ -66,7 +65,9 @@
         padding: 20px 0;
         
         // visual
-        border: 18px solid transparent;
+        border-width: 18px;
+        border-style: solid;
+        border-color: $white;
         border-image: url("./img/white-border.png") 36;
         list-style: none;
 
@@ -100,7 +101,6 @@
             color: $white;
             font-family: $titleFont;
             font-size: 1.25rem;
-            // font-weight: 700;
             letter-spacing: 0.5px;
             text-align: center;
             text-decoration: none;

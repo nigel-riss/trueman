@@ -12,7 +12,6 @@
 
     @include atTabletsLandscape {
         // box model
-        // display: flex;
         padding: 50px;
         padding-bottom: 10px;
     }
@@ -30,7 +29,6 @@
         
         @include atDesktopLarge {
             // box model
-            // width: 1280px;
             margin: 0 auto;
         }
     }

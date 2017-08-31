@@ -135,8 +135,6 @@
 
             // visual
             border: 2px solid $white;
-            // border: 18px solid transparent;
-            // border-image: url("./img/white-inv-border.png") 36;
         }
 
         &--inner {
@@ -163,11 +161,7 @@
         // typography
         color: $grey;
         font-size: 1rem;
-        // font-weight: 600;
         line-height: 1.75;
-
-        // visual
-        // border-left: 4px double $red;
 
         @include atTabletsLandscape {
             // box model
@@ -177,9 +171,6 @@
         @include atDesktop {
             // box model
             width: 600px;
-
-            // typography
-            // font-size: 1.125rem;
         }
     }
 
@@ -193,15 +184,6 @@
         @include atTabletsLandscape {
             // typography
             text-align: left;
-        }
-    }
-
-    &__deco {
-        // box model
-        display: none;
-
-        img {
-            
         }
     }
 
