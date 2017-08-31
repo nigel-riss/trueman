@@ -896,6 +896,9 @@ a {
     .about {
       padding: 60px;
       background-size: cover; } }
+  @media (min-width: 1200px) {
+    .about--inner {
+      background-size: contain; } }
   .about__header {
     margin-bottom: 20px; }
     @media (min-width: 1200px) {
@@ -1292,9 +1295,9 @@ a {
         font-size: 0.8em; }
   .prices-table td.prices-table__desc {
     padding-bottom: 20px;
-    color: #2b2a29;
+    color: #1a1210;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.75;
     border-bottom: none; }
     @media (min-width: 700px) {
       .prices-table td.prices-table__desc {
@@ -1331,44 +1334,56 @@ a {
     .price-logo__image {
       padding-top: 70px; } }
 
-@media (min-width: 700px) {
-  .price-inner {
-    padding: 40px 20px;
-    border: 18px solid transparent;
-    border-image: url("./img/light-grey-border.png") 36; } }
-
-@media (min-width: 1200px) {
-  .price-inner {
-    padding: 40px; } }
-
-@media (min-width: 1400px) {
-  .price-inner {
-    width: 1280px;
-    margin: 0 auto; } }
-
-@media (min-width: 900px) {
+.price-inner {
+  position: relative; }
+  @media (min-width: 700px) {
+    .price-inner {
+      padding: 40px 20px;
+      border: 18px solid transparent;
+      border-image: url("./img/light-grey-border.png") 36; } }
+  @media (min-width: 1200px) {
+    .price-inner {
+      padding: 40px; } }
+  @media (min-width: 1400px) {
+    .price-inner {
+      width: 1280px;
+      margin: 0 auto; } }
   .price-inner__column {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 20px; } }
-
-@media (min-width: 1200px) {
-  .price-inner__column {
-    padding-right: 30px; } }
-
-@media (min-width: 900px) {
-  .price-inner__column--right {
-    padding-left: 20px;
-    padding-right: 0; } }
-
-@media (min-width: 1200px) {
-  .price-inner__column--right {
-    padding-left: 30px; } }
-
-.price-inner__more {
-  padding-top: 40px;
-  text-align: center; }
+    position: relative;
+    z-index: 2; }
+    @media (min-width: 900px) {
+      .price-inner__column {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 20px; } }
+    @media (min-width: 1200px) {
+      .price-inner__column {
+        padding-right: 30px; } }
+    @media (min-width: 900px) {
+      .price-inner__column--right {
+        padding-left: 20px;
+        padding-right: 0; } }
+    @media (min-width: 1200px) {
+      .price-inner__column--right {
+        padding-left: 30px; } }
+  .price-inner__booking {
+    padding-top: 40px;
+    text-align: center; }
+  .price-inner__deco {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; }
+    @media (min-width: 900px) {
+      .price-inner__deco {
+        width: 100%;
+        height: 100%;
+        background-image: url("./img/price-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center; } }
 
 .member {
   position: relative;
