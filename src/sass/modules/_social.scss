@@ -17,6 +17,9 @@
     }
 
     &__content {
+        // box model
+        padding-top: 4px;
+        
         // typography
         font-size: 0;
     }

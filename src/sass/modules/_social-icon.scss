@@ -1,9 +1,33 @@
 .social-icon {
     // box model
     display: inline-block;
-    height: 24px;
-    width: 24px;
-    margin-right: 6px; 
+    height: 32px;
+    width: 32px;
+    margin-right: 10px; 
+    border: 2px solid $white;
+
+    // typography
+    color: $white;
+    font-size: 0;
+    line-height: 40px;
+    text-align: center;
+
+    // visual
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        // typography
+        color: $dark;
+        text-decoration: none;
+        
+        // visual
+        background-color: $white;
+    }
+
+    &::before {
+        // typography
+        font-size: 1rem;
+    }
 
     img {
         // box model

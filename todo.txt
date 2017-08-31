@@ -1,5 +1,5 @@
-01. [UX] Autoclose mobile menu on touch
-02. [VISUAL] Social icons fix
+// 01. [UX] Autoclose mobile menu on touch
+// 02. [VISUAL] Social icons fix
 03. [VISUAL] About inner bg images
 04. [VISUAL] Image sections shadows
 05. [VISUAL] Price bg logo
