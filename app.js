@@ -78,8 +78,11 @@ var $ = __webpack_require__(2);
 function MobileMenu() {
     var $mainMenu = $(".main-menu");
     var $menuIcon = $(".menu-icon");
+    var $menuLinks = $(".main-menu__list a");
 
     $menuIcon.on("click", toggleMenu);
+    $menuLinks.on("click", toggleMenu);
+    $menuLinks.on("tap", toggleMenu);
 
     function toggleMenu() {
         $mainMenu.toggleClass("main-menu--shown");
