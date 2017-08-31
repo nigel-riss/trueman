@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const sassImporter = require("sass-module-importer");
+const autoprefixer = require("gulp-autoprefixer");
 const notify = require("gulp-notify");
 
 gulp.task("styles", function() {
@@ -11,6 +12,10 @@ gulp.task("styles", function() {
                 title: "Styles",
                 message: error.message
             };
+        }))
+        .pipe(autoprefixer({
+            browsers: ["last 2 versions"],
+            cascade: false
         }))
         .pipe(gulp.dest("./dist"));
 });

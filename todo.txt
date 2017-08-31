@@ -1,11 +1,7 @@
-// 01. [UX] Autoclose mobile menu on touch
-// 02. [VISUAL] Social icons fix
 03. [VISUAL] About inner bg images
-04. [VISUAL] Image sections shadows
-05. [VISUAL] Price bg logo
+- 04. [VISUAL] Image sections shadows
 06. [VISUAL] Add more Shave content
 07. [VISUAL] Add more Haircut content
-08. [DEV] Connect Autoprefixer
 09. [DEV] Connect Minificator
 10. [DEV] Fix iOS bg-image problem
 11. [DEV] Test on popular browsers
