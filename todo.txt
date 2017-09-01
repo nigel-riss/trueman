@@ -1,5 +1,5 @@
-07. [VISUAL] Add more Haircut content
 09. [DEV] Connect Minificator
 11. [DEV] Test on popular browsers
 12. [VISUAL] Add and style map label for mobile
 13. [VISUAL] About inner bg images
+14. [INSIDE] Add images alt's
