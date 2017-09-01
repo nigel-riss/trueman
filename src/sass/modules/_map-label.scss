@@ -1,23 +1,23 @@
 .map-label {
-    // positioning
-    position: absolute;
-    z-index: 1;
-    top: 100px;
-    left: 50px;
-
     // box model
     display: none;
-    height: 300px;
-    width: 300px;
-
+    
     // visual
     background-color: $white;
     overflow: hidden;
     box-shadow: 0 0 14px rgba($grey, 0.5);
-
+    
     @include atTabletsLandscape {
+        // positioning
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        left: 50px;
+
         // box model
         display: block;
+        height: 300px;
+        width: 300px;
     }
 
     @include atDesktop {
