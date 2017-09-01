@@ -1587,20 +1587,20 @@ a {
         height: 600px; } }
 
 .map-label {
-  position: absolute;
-  z-index: 1;
-  top: 100px;
-  left: 50px;
   display: none;
-  height: 300px;
-  width: 300px;
   background-color: #ffffff;
   overflow: hidden;
   -webkit-box-shadow: 0 0 14px rgba(43, 42, 41, 0.5);
   box-shadow: 0 0 14px rgba(43, 42, 41, 0.5); }
   @media (min-width: 900px) {
     .map-label {
-      display: block; } }
+      position: absolute;
+      z-index: 1;
+      top: 100px;
+      left: 50px;
+      display: block;
+      height: 300px;
+      width: 300px; } }
   @media (min-width: 1200px) {
     .map-label {
       height: 400px;
