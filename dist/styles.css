@@ -1830,3 +1830,110 @@ a {
   line-height: 1.5; }
   .copyrights p a {
     color: #ffffff; }
+
+.shaving {
+  padding: 30px;
+  text-align: center; }
+  @media (min-width: 700px) {
+    .shaving {
+      padding: 40px; }
+      .shaving:nth-of-type(2n + 1) .shaving__image {
+        float: right;
+        margin-left: 30px;
+        margin-right: 0; } }
+  @media (min-width: 1200px) {
+    .shaving {
+      padding-bottom: 0; }
+      .shaving:nth-of-type(2n + 1) .shaving__image {
+        float: right;
+        margin-left: 60px;
+        margin-right: 0; } }
+  @media (min-width: 1400px) {
+    .shaving {
+      width: 1280px;
+      margin: 0 auto;
+      padding: 60px 0;
+      padding-bottom: 0; } }
+  .shaving::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%; }
+  .shaving__header {
+    display: inline-block;
+    border-width: 18px;
+    border-style: solid;
+    border-color: #ffffff;
+    -o-border-image: url("./img/title-border.png") 36;
+    border-image: url("./img/title-border.png") 36; }
+    @media (min-width: 700px) {
+      .shaving__header {
+        max-width: 300px;
+        margin-bottom: 10px; } }
+    @media (min-width: 900px) {
+      .shaving__header {
+        max-width: 400px; } }
+    @media (min-width: 1200px) {
+      .shaving__header {
+        margin-bottom: 40px; } }
+  .shaving__title {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2b2a29; }
+    @media (min-width: 900px) {
+      .shaving__title {
+        font-size: 1.25rem; } }
+  .shaving__image {
+    position: relative;
+    margin-top: 30px;
+    font-size: 0; }
+    @media (min-width: 700px) {
+      .shaving__image {
+        width: 45%;
+        float: left;
+        margin-top: 0;
+        margin-right: 30px;
+        margin-bottom: 30px; } }
+    @media (min-width: 1200px) {
+      .shaving__image {
+        width: 600px;
+        margin-right: 60px;
+        margin-bottom: 60px; } }
+    .shaving__image::before {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      border: 2px solid #ffffff; }
+    .shaving__image img {
+      width: 100%;
+      height: 100%; }
+  @media (min-width: 1200px) {
+    .shaving__content {
+      min-height: 600px;
+      margin-top: -100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  .shaving__content p {
+    color: #2b2a29;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-align: left; }

@@ -1,7 +1,5 @@
-03. [VISUAL] About inner bg images
-- 04. [VISUAL] Image sections shadows
-06. [VISUAL] Add more Shave content
 07. [VISUAL] Add more Haircut content
 09. [DEV] Connect Minificator
-10. [DEV] Fix iOS bg-image problem
 11. [DEV] Test on popular browsers
+12. [VISUAL] Add and style map label for mobile
+13. [VISUAL] About inner bg images
