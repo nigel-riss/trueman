@@ -1,6 +1,8 @@
 // wordpress
+@import "base/wordpress";
 
 // fonts
+@import "fonts/social-icons";
 
 // base
 @import "normalize.css";
@@ -53,7 +55,6 @@
 @import "modules/footer-block";
 @import "modules/footer-info";
 @import "modules/social";
-@import "fonts/social-icons";
 @import "modules/copyrights";
 
 //      shaving

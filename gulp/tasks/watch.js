@@ -23,6 +23,19 @@ gulp.task("watch", function() {
     watch("./src/js/**/*.js", function() {
         gulp.start("scriptsRefresh");
     });
+
+    // wordpress
+    watch("./wp/*.php", function() {
+        gulp.start("copyPHP");
+    });
+
+    watch("./dist/styles.css", function() {
+        gulp.start("copyCSS");
+    });
+
+    watch("./dist/*.js", function() {
+        gulp.start("copyJS");
+    });
 });
 
 gulp.task("pugChanged", ["pugRender"], function() {
