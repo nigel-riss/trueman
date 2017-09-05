@@ -46,6 +46,11 @@
         // visual
         opacity: 0.99;
         visibility: visible;
+
+        @include atDesktop {
+            // positioning
+            left: 250px;
+        }
     }
 
     &__logo {
