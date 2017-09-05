@@ -784,6 +784,9 @@ a {
     left: 0;
     opacity: 0.99;
     visibility: visible; }
+    @media (min-width: 1200px) {
+      .main-menu--shown {
+        left: 250px; } }
   .main-menu__logo {
     width: 120px;
     margin: 30px auto; }
@@ -1732,7 +1735,8 @@ a {
   @media (min-width: 1200px) {
     .site-footer {
       padding: 60px;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      padding-right: 120px; } }
   .site-footer__content {
     position: relative; }
     @media (min-width: 1400px) {
