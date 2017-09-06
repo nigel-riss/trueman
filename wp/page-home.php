@@ -2,6 +2,19 @@
     /*
         Template Name: Home Page
     */
+
+    // About vars
+    $bshop_desc         = get_field("bshop-desc");
+    $bshop_photo        = get_field("bshop-photo");
+
+    // Contacts vars
+    $phone_view         = get_field("phone-view");
+    $phone_link         = get_field("phone-link");
+    $address_header     = get_field("address-header");
+    $address_footer     = get_field("address-footer");
+    $work_time          = get_field("work-time");
+    // $bshop_desc         = get_field("");
+    // $bshop_desc         = get_field("");
 ?>
 
 <!DOCTYPE html>
@@ -44,8 +57,10 @@
         </div>
 
         <div class="contacts">
-            <p class="contacts__phone"><a href="tel:+375296396000">+375 296 396 000</a></p>
-            <p class="contacts__address">Минск, пр. Независимости, 46<br>район пл. Я. Коласа<br>Ежедневно с 10 до 22</p>
+            <p class="contacts__phone">
+                <a href="tel:<?php echo $phone_link; ?>"><?php echo $phone_view; ?></a>
+            </p>
+            <p class="contacts__address"><?php echo $address_header; ?><br><?php echo $work_time; ?></p>
         </div>
 
         <div class="logo">
@@ -87,11 +102,11 @@
         </header>
 
         <div class="about__content">
-            <div class="about__image"><img src="img/bshop.jpg" alt="Барбершоп Труман интерьер" /></div>
-            <p class="about__description">TRUEMAN — барбершоп для истинных мужчин. В барбершопе TRUEMAN нет пафоса. Здесь ценят простые вещи. Порядочность.
-                Преданность. Самоиронию. А в своих гостях мы видим прежде всего личность.<br><br><em>TRUEMAN</em> — барбершоп
-                по&#8209;настоящему.</p>
-            <div class="about__more"><a class="button button--simple" href="about.html">Подробнее</a></div>
+            <div class="about__image"><img src="<?php echo $bshop_photo; ?>" alt="Барбершоп Труман интерьер" /></div>
+            <p class="about__description"><?php echo $bshop_desc; ?></p>
+            <div class="about__more">
+                <a class="button button--simple" href="<?php echo esc_url(home_url("/")); ?>about">Подробнее</a>
+            </div>
         </div>
     </section>
 
@@ -110,7 +125,7 @@
                     </div>
                     <h3 class="service__title">Стрижка</h3>
                     <p class="service__subtitle">Мужская и Детская</p>
-                    <div class="service__more"><a href="haircut.html">Подробнее</a></div>
+                    <div class="service__more"><a href="<?php echo esc_url(home_url("/")); ?>haircut">Подробнее</a></div>
                 </header>
                 <div class="service__cover"></div>
                 <div class="service__image">
@@ -126,7 +141,7 @@
                     </div>
                     <h3 class="service__title">Бритьё</h3>
                     <p class="service__subtitle">Классическое и Королевское</p>
-                    <div class="service__more"><a href="royal.html">Подробнее</a></div>
+                    <div class="service__more"><a href="<?php echo esc_url(home_url("/")); ?>shaving">Подробнее</a></div>
                 </header>
                 <div class="service__cover"></div>
                 <div class="service__image">
@@ -229,7 +244,7 @@
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-black.svg" alt="Trueman Barbershop Logo" />
                     </div>
                 </div>
-                <a class="button" href="price.html">Все услуги</a>
+                <a class="button" href="<?php echo esc_url(home_url("/")); ?>services">Все услуги</a>
             </div>
         </div>
     </section>
@@ -279,12 +294,12 @@
             <div class="footer-block">
                 <div class="footer-info">
                     <h3 class="footer-info__title">Контакты</h3><a class="footer-info__tel" href="tel:+375296396000">+375 296 396 000</a>
-                    <p class="footer-info__text">г. Минск, пр. Независимости, 46<br>ООО «Труман групп»</p>
+                    <p class="footer-info__text"><?php echo $address_footer; ?><br>ООО «Труман групп»</p>
                 </div>
 
                 <div class="footer-info">
                     <h3 class="footer-info__title">Часы работы</h3>
-                    <p class="footer-info__text">Ежедневно с 10 до 22</p>
+                    <p class="footer-info__text"><?php echo $work_time; ?></p>
                 </div>
             </div>
 
