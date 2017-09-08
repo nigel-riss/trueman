@@ -1029,19 +1029,19 @@ a {
     width: 100%; }
   .about__image {
     position: relative;
-    height: calc(100vw - 60px); }
-    @media (min-width: 700px) {
+    font-size: 0; }
+    @media (min-width: 900px) {
       .about__image {
-        height: 300px;
-        width: 300px;
+        width: 350px;
         float: right;
         margin-bottom: 40px;
-        margin-left: 40px; } }
+        margin-left: 40px;
+        margin-top: -50px; } }
     @media (min-width: 1200px) {
       .about__image {
-        height: 400px;
-        width: 400px;
-        margin-top: -50px; } }
+        width: 500px;
+        margin-bottom: 60px;
+        margin-top: -75px; } }
     .about__image::before {
       content: "";
       position: absolute;

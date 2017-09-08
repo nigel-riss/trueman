@@ -13,8 +13,10 @@
     $address_header     = get_field("address-header");
     $address_footer     = get_field("address-footer");
     $work_time          = get_field("work-time");
-    // $bshop_desc         = get_field("");
-    // $bshop_desc         = get_field("");
+    
+    // Prices vars
+    $short_price_left   = get_field("short-price-left");
+    $short_price_right  = get_field("short-price-right");
 ?>
 
 <!DOCTYPE html>
@@ -175,67 +177,11 @@
         <div class="section__content section__content--prices">
             <div class="prices-wrapper">
                 <div class="price-inner__column">
-                    <table class="prices-table">
-                        <caption>Основные услуги</caption>
-                        <tr>
-                            <td>Мужская стрижка</td>
-                            <td>40 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка машинкой</td>
-                            <td>30 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Детская стрижка <br><small>(от 5-ти лет)</small></td>
-                            <td>25 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка бороды</td>
-                            <td>25 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Классическое бритьё</td>
-                            <td>35 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Королевское бритьё <br><small>(c косметикой Truefitt & Hill)</small></td>
-                            <td>50 <span>p.</span></td>
-                        </tr>
-                    </table>
+                    <?php echo $short_price_left; ?>
                 </div>
-
+                
                 <div class="price-inner__column price-inner__column--right">
-                    <table class="prices-table">
-                        <caption>Комплексные услуги</caption>
-                        <tr>
-                            <td>Отец + сын</td>
-                            <td>60 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Друг + друг</td>
-                            <td>70 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка + Бритьё</td>
-                            <td>70 <span>p.</span></td>
-                        </tr>
-                    </table>
-
-                    <table class="prices-table">
-                        <caption>Дополнительные услуги</caption>
-                        <tr>
-                            <td>Укладка волос</td>
-                            <td>10 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Камуфляж седины</td>
-                            <td>25 <span>p.</span></td>
-                        </tr>
-                        <tr>
-                            <td>Бритьё головы</td>
-                            <td>35 <span>p.</span></td>
-                        </tr>
-                    </table>
+                    <?php echo $short_price_right; ?>
                 </div>
 
                 <div class="price-logo">

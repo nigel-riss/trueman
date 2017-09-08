@@ -104,23 +104,25 @@
         // positioning
         position: relative;
 
-        // box model
-        height: calc(100vw - 60px);
+        // typography
+        font-size: 0;
 
-        @include atTabletsPortrait {
+        @include atTabletsLandscape {
             // box model
-            height: 300px;
-            width: 300px;
+            // height: 300px;
+            width: 350px;
             float: right;
             margin-bottom: 40px;
             margin-left: 40px;
+            margin-top: -50px;
         }
         
         @include atDesktop {
             // box model
-            height: 400px;
-            width: 400px;
-            margin-top: -50px;
+            // height: 400px;
+            width: 500px;
+            margin-bottom: 60px;
+            margin-top: -75px;
         }
 
         &::before {
