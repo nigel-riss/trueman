@@ -1056,6 +1056,9 @@ a {
         height: 42vw;
         max-width: 600px;
         max-height: 600px; } }
+    @media (min-width: 1200px) {
+      .about__image--inner {
+        margin-top: 0; } }
     .about__image img {
       width: 100%; }
   .about__description {
