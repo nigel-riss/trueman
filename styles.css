@@ -1661,6 +1661,7 @@ a {
       width: 300px; } }
   @media (min-width: 1200px) {
     .map-label {
+      left: 60px;
       height: 400px;
       width: 400px; } }
   .map-label__header {
@@ -1736,7 +1737,7 @@ a {
     .site-footer {
       padding: 60px;
       padding-bottom: 20px;
-      padding-right: 120px; } }
+      padding-right: 140px; } }
   .site-footer__content {
     position: relative; }
     @media (min-width: 1400px) {
