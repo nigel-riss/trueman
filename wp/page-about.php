@@ -5,7 +5,7 @@
 
     // Page vars
     $page_subtitle      = get_field("page-subtitle");
-    $page_title      = get_field("page-title");
+    $page_title         = get_field("page-title");
     $page_photo         = get_field("page-photo");
 
     get_header();
