@@ -1041,7 +1041,7 @@ a {
       .about__image {
         width: 500px;
         margin-bottom: 60px;
-        margin-top: -75px; } }
+        margin-top: -70px; } }
     .about__image::before {
       content: "";
       position: absolute;
