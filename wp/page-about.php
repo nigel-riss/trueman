@@ -30,12 +30,32 @@
 
 
         <div class="about__partners">
-            <div class="partner"><img src="./img/partners/oldboy.png" alt="Oldboy logo" /></div>
-            <div class="partner"><img src="./img/partners/yacht.png" alt="Yacht Event logo" /></div>
-            <div class="partner"><img src="./img/partners/american-crew.png" alt="American Crew logo" /></div><br>
-            <div class="partner"><img src="./img/partners/g-tonic.png" alt="Gentlemens tonic logo" /></div>
-            <div class="partner"><img src="./img/partners/truefitt-and-hill.png" alt="Truefitt &amp; Hill logo" /></div>
-            <div class="partner"><img src="./img/partners/proraso.png" alt="Proraso logo" /></div>
+            <?php
+            $counter = 0;
+            $args = array(
+                "category_name" => "partner" 
+            );
+
+            query_posts($args);
+
+            if (have_posts()) {
+                while(have_posts()) {
+                    the_post();
+
+                    // vars
+                    $partner_logo = get_field("partner-logo");
+                    $partner_name = get_field("partner-name");
+
+            ?>
+
+            <div class="partner"><img src="<?php echo $partner_logo; ?>" alt="<?php echo $partner_name; ?> logo" /></div>
+
+            <?php
+                    $counter++;
+                    if (($counter % 3) == 0) { echo "<br>"; }
+                    }
+                }
+            ?>
         </div>
     </section>
 
