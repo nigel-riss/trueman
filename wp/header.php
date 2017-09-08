@@ -17,13 +17,12 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"/>
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=3" />
 
-    <title>TRUEMAN</title>
+    <title>TRUEMAN — <?php the_title(); ?></title>
 
     <?php wp_head(); ?>
 </head>
