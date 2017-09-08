@@ -17,6 +17,12 @@
     // Prices vars
     $short_price_left   = get_field("short-price-left");
     $short_price_right  = get_field("short-price-right");
+
+    // Map vars
+    $map_photo          = get_field("map-photo");
+    $map_address        = get_field("map-address");
+    $map_latitude       = get_field("map-latitude");
+    $map_longitude      = get_field("map-longitude");
 ?>
 
 <!DOCTYPE html>
@@ -216,11 +222,13 @@
             <header class="map-label__header">
                 <p class="map-label__city">Минск</p>
                 <h2 class="map-label__title">Барбершоп Trueman</h2>
-                <p class="map-label__address">пр. Независимости 46</p>
-                <div class="map-label__logo"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-black.svg" alt="Trueman Barbershop logo" /></div>
+                <p class="map-label__address"><?php echo $map_address; ?></p>
+                <div class="map-label__logo">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-black.svg" alt="Trueman Barbershop logo" />
+                </div>
             </header>
             <div class="map-label__photo">
-                <img src="./img/city.jpg" alt="Trueman Barbershop photo" />
+                <img src="<?php echo $map_photo; ?>" alt="Trueman Barbershop photo" />
             </div>
         </div>
 
@@ -239,7 +247,8 @@
 
             <div class="footer-block">
                 <div class="footer-info">
-                    <h3 class="footer-info__title">Контакты</h3><a class="footer-info__tel" href="tel:+375296396000">+375 296 396 000</a>
+                    <h3 class="footer-info__title">Контакты</h3>
+                    <a class="footer-info__tel" href="tel:<?php echo $phone_link; ?>"><?php echo $phone_view; ?></a>
                     <p class="footer-info__text"><?php echo $address_footer; ?><br>ООО «Труман групп»</p>
                 </div>
 
@@ -268,7 +277,24 @@
     </footer>
 
     <script type="text/javascript" src="//w79413.yclients.com/widgetJS" charset="UTF-8"></script>
-    <script src="<?php bloginfo("stylesheet_directory"); ?>/map.js"></script>
+    <script>
+        ;
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 17,
+                center: {lat: <?php echo $map_latitude; ?>, lng: <?php echo $map_longitude; ?>},
+                disableDefaultUI:true,
+                scrollwheel: false,
+                zoomControl: true,
+                scaleControl: false
+            });
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: {lat: <?php echo $map_latitude; ?>, lng: <?php echo $map_longitude; ?>}
+            });
+        }
+    </script>
     <script src="<?php bloginfo("stylesheet_directory"); ?>/app.js"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
 

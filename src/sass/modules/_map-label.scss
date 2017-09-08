@@ -21,6 +21,9 @@
     }
 
     @include atDesktop {
+        // positioning
+        left: 60px;
+        
         // box model
         height: 400px;
         width: 400px;
