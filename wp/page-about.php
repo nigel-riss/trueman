@@ -28,6 +28,9 @@
             ?>
         </div>
 
+        <div class="about__gallery">
+            <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '67' ); } ?>
+        </div>
 
         <div class="about__partners">
             <?php
