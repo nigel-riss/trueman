@@ -3,6 +3,11 @@
         Template Name: Home Page
     */
 
+    // SEO vars
+    $meta_description   = get_field("meta-description");
+    $ga_counter         = get_field("ga-counter");
+    $ym_counter         = get_field("ym-counter");
+
     // About vars
     $bshop_desc         = get_field("bshop-desc");
     $bshop_photo        = get_field("bshop-photo");
@@ -37,6 +42,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="<?php echo $meta_description; ?>" />
+
+    <!-- OG -->
+    <meta property="og:title" content="TRUEMAN Барбершоп">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/trueman.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="<?php echo $meta_description; ?>">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="TRUEMAN Барбершоп">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png?v=dLmJ6POrEb" />
@@ -54,9 +69,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=3" />
 
-    <title>TRUEMAN</title>
+    <title>TRUEMAN Барбрершоп</title>
 
     <?php wp_head(); ?>
+
+    <?php echo $ga_counter; ?>
+    <?php echo $ym_counter; ?>
 </head>
 
 <body>
@@ -102,7 +120,7 @@
         </div>
 
         <div class="main-header__deco">
-            <img src="img/deco.svg" alt="" />
+            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/deco.svg" alt="" />
         </div>
     </header>
 

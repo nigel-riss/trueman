@@ -100,7 +100,7 @@
             
             // typography
             font-size: 0;
-            text-align: center;
+            text-align: left;
 
             @include atTabletsLandscape {
                 // box model
@@ -115,7 +115,8 @@
             @include atDesktopLarge {
                 // box model
                 display: flex;
-                justify-content: space-between;
+                justify-content: left;
+                flex-wrap: wrap;
                 width: 1280px;
                 padding: 60px 0;
             }

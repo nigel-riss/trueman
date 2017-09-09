@@ -1,3 +1,9 @@
+<?php
+    // SEO vars
+    $meta_description   = get_field("meta-description");
+    $ga_counter         = get_field("ga-counter");
+    $ym_counter         = get_field("ym-counter");
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -5,6 +11,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="<?php echo $meta_description; ?>" />
+
+    <!-- OG -->
+    <meta property="og:title" content="<?php the_title(); ?> - TRUEMAN Барбершоп">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/trueman.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="<?php echo $meta_description; ?>">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="TRUEMAN Барбершоп">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png?v=dLmJ6POrEb" />
@@ -25,10 +41,13 @@
     <title>TRUEMAN — <?php the_title(); ?></title>
 
     <?php wp_head(); ?>
+
+    <?php echo $ga_counter; ?>
+    <?php echo $ym_counter; ?>
 </head>
 
-<!-- Header -->
 <body>
+    <!-- Header -->
     <header class="inner-header">
         <div class="inner-header__border"></div>
 
@@ -52,7 +71,7 @@
         </div>
 
         <nav class="main-menu">
-            <div class="main-menu__logo"><img src="img/logo.svg" alt="Trueman Barbershop Logo" /></div>
+            <div class="main-menu__logo"><img src="<?php bloginfo("stylesheet_directory");?>/img/logo.svg" alt="Trueman Barbershop Logo" /></div>
             <ul class="main-menu__list">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>about">О нас</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
