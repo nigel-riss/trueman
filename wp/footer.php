@@ -10,13 +10,14 @@
 
             <div class="footer-block">
                 <div class="footer-info">
-                    <h3 class="footer-info__title">Контакты</h3><a class="footer-info__tel" href="tel:+375296396000">+375 296 396 000</a>
-                    <p class="footer-info__text">г. Минск, пр. Независимости, 46<br>ООО «Труман групп»</p>
+                    <h3 class="footer-info__title">Контакты</h3>
+                    <a class="footer-info__tel" href="tel:<?php the_field("phone-link", 5); ?>"><?php the_field("phone-view", 5); ?></a>
+                    <p class="footer-info__text"><?php the_field("address-footer", 5); ?><br>ООО «Труман групп»</p>
                 </div>
 
                 <div class="footer-info">
                     <h3 class="footer-info__title">Часы работы</h3>
-                    <p class="footer-info__text">Ежедневно с 10 до 22</p>
+                    <p class="footer-info__text"><?php the_field("work-time", 5); ?></p>
                 </div>
             </div>
 
@@ -24,9 +25,9 @@
                 <div class="social">
                     <h3 class="social__title">Мы в соцсетях</h3>
                     <div class="social__content">
-                        <a class="social-icon icon-instagram" href="https://www.instagram.com/truemanbarbershop/">Instagram</a>
-                        <a class="social-icon icon-facebook" href="https://www.facebook.com/truemanbarbershop/">Facebook</a>
-                        <a class="social-icon icon-vkontakte" href="https://vk.com/truemanbarbershop">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="<?php the_field("instagram-link", 5); ?>">Instagram</a>
+                        <a class="social-icon icon-facebook" href="<?php the_field("facebook-link", 5); ?>">Facebook</a>
+                        <a class="social-icon icon-vkontakte" href="<?php the_field("vkontakte-link", 5); ?>">Vkontakte</a>
                     </div>
                 </div>
 

@@ -23,6 +23,11 @@
     $map_address        = get_field("map-address");
     $map_latitude       = get_field("map-latitude");
     $map_longitude      = get_field("map-longitude");
+
+    // Social vars
+    $instagram_link     = get_field("instagram-link");
+    $facebook_link      = get_field("facebook-link");
+    $vkontakte_link     = get_field("vkontakte-link");
 ?>
 
 <!DOCTYPE html>
@@ -282,9 +287,9 @@
                 <div class="social">
                     <h3 class="social__title">Мы в соцсетях</h3>
                     <div class="social__content">
-                        <a class="social-icon icon-instagram" href="https://www.instagram.com/truemanbarbershop/">Instagram</a>
-                        <a class="social-icon icon-facebook" href="https://www.facebook.com/truemanbarbershop/">Facebook</a>
-                        <a class="social-icon icon-vkontakte" href="https://vk.com/truemanbarbershop">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="<?php echo $instagram_link; ?>">Instagram</a>
+                        <a class="social-icon icon-facebook" href="<?php echo $facebook_link; ?>">Facebook</a>
+                        <a class="social-icon icon-vkontakte" href="<?php echo $vkontakte_link; ?>">Vkontakte</a>
                     </div>
                 </div>
 
