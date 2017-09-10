@@ -73,11 +73,11 @@
 
     <?php wp_head(); ?>
 
-    <?php echo $ga_counter; ?>
     <?php echo $ym_counter; ?>
 </head>
 
 <body>
+    <?php echo $ga_counter; ?>
     <!-- Header -->
     <header class="main-header">
         <div class="main-header__border"></div>
@@ -107,6 +107,7 @@
             <ul class="main-menu__list">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>about">О нас</a></li>
                 <li><a href="#services">Услуги</a></li>
+                <li><a href="#team">Мастера</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
@@ -220,6 +221,55 @@
                 </div>
                 <a class="button" href="<?php echo esc_url(home_url("/")); ?>services">Все услуги</a>
             </div>
+        </div>
+    </section>
+
+    <section class="section section--team" id="team">
+        <header class="section__header">
+            <h2>Мастера</h2>
+        </header>
+
+        <div class="section__content section__content--team">
+            <?php
+                $args = array(
+                    "category_name" => "team"
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while(have_posts()) {
+                        the_post();
+
+                        // vars
+                        $member_position    = get_field("member-position");
+                        $member_name        = get_field("member-name");
+                        $member_photo       = get_field("member-photo");
+            ?>
+
+            <article class="member">
+                <header class="member__header">
+                    <p class="member__position"><?php echo $member_position; ?></p>
+                    <h3 class="member__name"><?php echo $member_name; ?></h3>
+                </header>
+                <div class="member__cover"></div>
+                <div class="member__photo">
+                    <img src="<?php echo $member_photo; ?>" alt="<?php echo $member_name; ?> барбер барбершопа TRUEMAN" />
+                </div>
+            </article>
+
+            <?php
+                    }
+                }
+            ?>
+
+            <article class="member member--join">
+                <header class="member__header">
+                    <h3 class="member__title">Присоединяйся<br>к нашей команде</h3>
+                </header>
+                <div class="member__cover member__cover--join"></div>
+                <div class="member__photo"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/barbers/join.jpg" alt="" /></div>
+            </article>
         </div>
     </section>
 

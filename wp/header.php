@@ -43,10 +43,10 @@
     <?php wp_head(); ?>
 
     <?php echo $ga_counter; ?>
-    <?php echo $ym_counter; ?>
 </head>
 
 <body>
+    <?php echo $ym_counter; ?>
     <!-- Header -->
     <header class="inner-header">
         <div class="inner-header__border"></div>
