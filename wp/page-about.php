@@ -28,8 +28,14 @@
             ?>
         </div>
 
-        <div class="about__gallery">
-            <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '67' ); } ?>
+        <div class="about-gallery">
+            <header class="section__header">
+                <h2>Галерея</h2>
+            </header>
+
+            <div class="about-gallery__content">
+                <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '67' ); } ?>
+            </div>
         </div>
 
         <div class="about__partners">

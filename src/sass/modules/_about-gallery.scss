@@ -1,0 +1,61 @@
+
+.about-gallery {
+    // box model
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    &__content {
+        // box model
+        padding-top: 40px;
+    }
+
+    .envira-gallery-item-inner{
+        // positioning
+        position: relative;
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            top: 4px;
+            z-index: 9999;
+
+            // visual
+            border: 2px solid $white;
+            pointer-events: none;
+        }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 9999;
+
+            // visual
+            border: 2px solid $white;
+            pointer-events: none;
+        }
+
+        .caption {
+            // positioning
+            // box model
+            padding-bottom: 10px;
+            
+            // typography
+            font-family: $mainFont;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}

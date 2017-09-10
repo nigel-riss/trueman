@@ -1078,7 +1078,43 @@ a {
   .about__partners {
     width: 100%;
     padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center; }
+
+.about-gallery {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+  .about-gallery__content {
+    padding-top: 40px; }
+  .about-gallery .envira-gallery-item-inner {
+    position: relative; }
+    .about-gallery .envira-gallery-item-inner::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 4px;
+      right: 4px;
+      top: 4px;
+      z-index: 9999;
+      border: 2px solid #ffffff;
+      pointer-events: none; }
+    .about-gallery .envira-gallery-item-inner::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 9999;
+      border: 2px solid #ffffff;
+      pointer-events: none; }
+    .about-gallery .envira-gallery-item-inner .caption {
+      padding-bottom: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      text-align: center; }
 
 .section__header {
   position: relative;
