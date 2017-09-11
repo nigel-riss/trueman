@@ -75,6 +75,7 @@
             <ul class="main-menu__list">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>about">О нас</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс-лист</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#team">Мастера</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#contacts">Контакты</a></li>
             </ul>

@@ -107,6 +107,7 @@
             <ul class="main-menu__list">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>about">О нас</a></li>
                 <li><a href="#services">Услуги</a></li>
+                <li><a href="#prices">Прайс-лист</a></li>
                 <li><a href="#team">Мастера</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
@@ -198,7 +199,7 @@
     </section>
 
     <!-- Price List -->
-    <section class="section section--prices">
+    <section class="section section--prices" id="prices">
         <header class="section__header">
             <h2>Прайс-лист</h2>
         </header>
