@@ -69,7 +69,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=3" />
 
-    <title>TRUEMAN Барбрершоп</title>
+    <title>TRUEMAN Барбершоп</title>
 
     <?php wp_head(); ?>
 
